@@ -14,7 +14,9 @@
         <!-- header top -->
         <div class="header__top">
           <a class="header__link" href="#">
-            <img class="header__logo logo" src=".svg" width="89" height="20" alt="Supergym">
+            <svg width="87" height="20">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
           </a>
           <a class="header__number" href="tel:+88005555555">8-800-555-55-55</a>
         </div>
@@ -38,22 +40,13 @@
           <picture class="header__picture">
             <img class="header__image" src="img/desktop/superman.jpg" srcset="img/desktop/superman@2x.jpg 2x" width="500" height="556" alt="Человек в майке супермена">
           </picture>
-          <ul class="header__social social">
+          <ul class="header__social social social--vertical">
             <li class="social__item">
-              <a class="social__link" href="#">
-                <!-- svg sprite + aria Facebook --> 
-              </a>
-            </li>
+              <a class="social__link" href="#">FB</a></li>
             <li class="social__item">
-              <a class="social__link" href="#">
-                <!-- svg sprite + aria Vk --> 
-              </a>
-            </li>
+              <a class="social__link" href="#">VK</a></li>
             <li class="social__item">
-              <a class="social__link" href="#">
-                <!-- svg sprite + aria Instagram --> 
-              </a>
-            </li>
+              <a class="social__link" href="#">IG</a></li>
           </ul>
         </div>
       </div>
@@ -250,12 +243,16 @@
           <ul class="coaches__controls">
             <li class="coaches__control coaches__control--previous">
               <button class="coaches__button" type="button" aria-label="Предыдущий слайд">
-                <!-- svg sprite -->
+                <svg width="18" height="34">
+                  <use xlink:href="img/sprite.svg#icon-previous"></use>
+                </svg>
               </button>
             </li>
             <li class="coaches__control coaches__control--next">
               <button class="coaches__button" type="button" aria-label="Следующий слайд">
-                <!-- svg sprite -->
+                <svg width="18" height="34">
+                  <use xlink:href="img/sprite.svg#icon-next"></use>
+                </svg>
               </button>
             </li>
           </ul>
@@ -376,12 +373,16 @@
           <ul class="reviews__controls">
             <li class="reviews__control reviews__control--previous">
               <button class="reviews__button" type="button" aria-label="Предыдущий слайд">
-                <!-- svg sprite -->
+                <svg width="18" height="34">
+                  <use xlink:href="img/sprite.svg#icon-previous"></use>
+                </svg>
               </button>
             </li>
             <li class="reviews__control reviews__control--next">
               <button class="reviews__button" type="button" aria-label="Следующий слайд">
-                <!-- svg sprite -->
+                <svg width="18" height="34">
+                  <use xlink:href="img/sprite.svg#icon-next"></use>
+                </svg>
               </button>
             </li>
           </ul>
@@ -438,6 +439,52 @@
         </section>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <!-- footer logo -->
+        <a class="footer__link" href="#">
+          <svg width="87" height="20">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <!-- footer navigation -->
+        <nav class="footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Услуги</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Абонементы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Акции</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Тренеры</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Расписание</a></li>
+          </ul>
+        </nav>
+
+        <ul class="footer__social social">
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="#">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--ok">
+            <a class="social__link" href="#">
+              <svg width="10" height="17">
+                <use xlink:href="img/sprite.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--reddit">
+            <a class="social__link" href="#">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="js/main.min.js"></script>
   </body>
