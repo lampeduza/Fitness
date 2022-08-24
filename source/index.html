@@ -13,7 +13,7 @@
       <div class="header__wrapper container">
         <!-- header top -->
         <div class="header__top">
-          <a class="header__link">
+          <a class="header__link" href="#">
             <img class="header__logo logo" src=".svg" width="89" height="20" alt="Supergym">
           </a>
           <a class="header__number" href="tel:+88005555555">8-800-555-55-55</a>
@@ -40,17 +40,17 @@
           </picture>
           <ul class="header__social social">
             <li class="social__item">
-              <a class="social__link">
+              <a class="social__link" href="#">
                 <!-- svg sprite + aria Facebook --> 
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link">
+              <a class="social__link" href="#">
                 <!-- svg sprite + aria Vk --> 
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link">
+              <a class="social__link" href="#">
                 <!-- svg sprite + aria Instagram --> 
               </a>
             </li>
@@ -87,9 +87,6 @@
                 <source src="video.mp4" type="video/mp4">
                 <source src="video.webm" type="video/webm">
                 <source src="video.ogv" type="video/ogg">
-                <object data="video.swf" type="application/x-shockwave-flash">
-                  <param name="movie" value="video.swf">
-                </object>
               </video>
             </div>
           </div>
@@ -334,7 +331,7 @@
             <div class="offer__content">
               <h3 class="offer__title">Безлимитный абонемент в тренажерный зал</h3>
               <p class="offer__annual">Год <span class="offer__price">4999</span></p>
-              <a class="offer__more">Подробнее</a>
+              <a class="offer__more" href="#">Подробнее</a>
             </div>
 
             <picture class="stock__picture">
@@ -390,6 +387,29 @@
           </ul>
         </div>
       </section>
+
+      <div class="main__index-column">
+        <!-- try section -->
+        <section class="try">
+          <div class="try__wrapper">
+            <h2 class="try__title">Бесплатное занятие</h2>
+
+            <!-- try form -->
+            <form class="try__form" action="https://echo.htmlacademy.ru/" method="post">
+              <ul class="try__list">
+                <li class="try__item">
+                  <label class="visually-hidden" for="name-field">Ваше имя:</label>
+                  <input class="try__item-field" type="text" name="name-field" id="name-field" required>
+                </li>
+                <li class="try__item">
+                  <label class="visually-hidden" for="number-field">Ваш телефон:</label>
+                  <input class="try__item-field" type="number" name="number-field" id="number-field" required>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
 
     <script src="js/main.min.js"></script>
