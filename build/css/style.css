@@ -132,6 +132,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -194,6 +195,10 @@ textarea {
   line-height: 26px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .header__content {
@@ -296,6 +301,10 @@ textarea {
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .social--vertical {
@@ -373,12 +382,20 @@ textarea {
 
 .represent__visual figure {
   margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .represent__video {
   position: absolute;
   left: -63px;
   bottom: -115px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .represent__video::before {
@@ -405,12 +422,17 @@ textarea {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-image: url("../img/desktop/play.png");
+  cursor: pointer;
+}
+
+.represent__action {
+  cursor: pointer;
 }
 
 .subscriptions {
   background-color: #f8f9fc;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .subscriptions::after {
@@ -497,6 +519,10 @@ textarea {
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .subscriptions__control:hover {
@@ -542,6 +568,10 @@ textarea {
   border: 7px solid rgba(255, 255, 255, 0);
   background-color: #ffffff;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .subscriptions__item:hover {

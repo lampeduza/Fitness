@@ -1,5 +1,6 @@
 .social {
 	@include reset-list;
+	user-select: none;
 
 	&--vertical {
 		margin-bottom: 45px;
