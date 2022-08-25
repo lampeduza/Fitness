@@ -1,0 +1,25 @@
+.social {
+	@include reset-list;
+
+	&--vertical {
+		margin-bottom: 45px;
+
+		.social__item {
+			margin-bottom: 18px;
+			display: flex;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.social__link {
+			display: flex;
+			justify-content: center;
+			width: 14px;
+			font-size: 12px;
+			line-height: 14px;
+			color: $color-default-white;
+		}
+	}
+}

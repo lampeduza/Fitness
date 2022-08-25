@@ -1,0 +1,11 @@
+.button {
+	@include button;
+
+	&--white {
+		@include white-button;
+	}
+
+	&--black {
+		@include black-button;
+	}
+}

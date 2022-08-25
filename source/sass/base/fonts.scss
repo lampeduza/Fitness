@@ -1,21 +1,65 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
-
+/* Bebas Neue light (normal) */
 @font-face {
+  font-family: 'Bebas Neue';
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
-
+  font-weight: 300;
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/bebas-neue/light.woff2") format("woff2"),
+    url("../fonts/bebas-neue/light.woff") format("woff");
+}
+
+/* Bebas Neue regular (normal) */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/bebas-neue/regular.woff2") format("woff2"),
+    url("../fonts/bebas-neue/regular.woff") format("woff");
+}
+
+/* Bebas Neue bold (normal) */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../fonts/bebas-neue/bold.woff2") format("woff2"),
+    url("../fonts/bebas-neue/bold.woff") format("woff");
+}
+
+/* Roboto Condensed light (normal) */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    url("../fonts/roboto-condensed-light.woff2") format("woff2"),
+    url("../fonts/roboto-condensed-light.woff") format("woff");
+}
+
+/* Roboto Condensed regular (normal) */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/roboto-condensed-regular.woff2") format("woff2"),
+    url("../fonts/roboto-condensed-regular.woff") format("woff");
+}
+
+/* Roboto Condensed bold (normal) */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../fonts/roboto-condensed-bold.woff2") format("woff2"),
+    url("../fonts/roboto-condensed-bold.woff") format("woff");
 }

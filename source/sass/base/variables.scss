@@ -3,20 +3,19 @@
 
 // Default
 
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-sapphire: #102654;
 
 // Gradient
 // ---------------------------------
-
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$header-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------
@@ -33,9 +32,9 @@ $ff-placeholder: "Placeholder", "Arial", sans-serif;
 // Viewports
 // ---------------------------------
 
-$vp-320: 320px;
-$vp-768: 768px;
-$vp-1366: 1366px;
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
 // Retina
 // ---------------------------------
