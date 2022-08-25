@@ -89,29 +89,35 @@
           <h2 class="subscriptions__title">Абонементы</h2>
           <!-- subscriptions slider -->
           <ul class="subscriptions__slider">
-            <li class="subscriptions__slide subscriptions__slide--current">1 месяц</li>
-            <li class="subscriptions__slide">6 месяцев</li>
-            <li class="subscriptions__slide">12 месяцев</li>
+            <li class="subscriptions__slide subscriptions__slide--current">
+              <button class="subscriptions__control">1 месяц</button>
+            </li>
+            <li class="subscriptions__slide">
+              <button class="subscriptions__control">6 месяцев</button>
+            </li>
+            <li class="subscriptions__slide">
+              <button class="subscriptions__control">12 месяцев</button>
+            </li>
           </ul>
 
           <!-- subscriptions cards -->
           <ul class="subscriptions__list">
-            <li class="subscriptions__item">
+            <li class="subscriptions__item" tabindex="0">
               <h3 class="subscriptions__item-title">С тренером</h3>
               <p class="subscriptions__item-additional-information">12 занятий</p>
-              <p class="subscriptions__item-price">5000 <span>₽</span></p>
+              <p class="subscriptions__item-price">5000<span class="subscriptions__item-symbol">₽</span></p>
               <a class="subscriptions__button button button--black" href="#">Купить абонемент</a>
             </li>
-            <li class="subscriptions__item subscriptions__item--current">
+            <li class="subscriptions__item subscriptions__item--current" tabindex="0">
               <h3 class="subscriptions__item-title">Дневной</h3>
               <p class="subscriptions__item-additional-information">С 8:00 до 17:00</p>
-              <p class="subscriptions__item-price">1700 <span>₽</span></p>
+              <p class="subscriptions__item-price">1700<span class="subscriptions__item-symbol">₽</span></p>
               <a class="subscriptions__button button button--gradient" href="#">Купить абонемент</a>
             </li>
-            <li class="subscriptions__item">
+            <li class="subscriptions__item" tabindex="0">
               <h3 class="subscriptions__item-title">Полный день</h3>
               <p class="subscriptions__item-additional-information">С 8:00 до 22:00</p>
-              <p class="subscriptions__item-price">2700 <span>₽</span></p>
+              <p class="subscriptions__item-price">2700<span class="subscriptions__item-symbol">₽</span></p>
               <a class="subscriptions__button button button--black" href="#">Купить абонемент</a>
             </li>
           </ul>

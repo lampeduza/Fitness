@@ -8,4 +8,8 @@
 	&--black {
 		@include black-button;
 	}
+
+	&--gradient {
+		@include gradient-button;
+	}
 }

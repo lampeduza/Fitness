@@ -1,0 +1,202 @@
+.subscriptions {
+	background-color: $color-ghost-white;
+	position: relative;
+	overflow-x: hidden;
+
+	&::after {
+		content: '';
+		width: 321px;
+		height: 384px;
+		background-image: url('../img/desktop/subscriptions-background.png');
+		background-size: 321px, 384px;
+		position: absolute;
+		right: -90px;
+		bottom: -110px;
+	}
+}
+
+.subscriptions__wrapper {
+	padding-top: 120px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.subscriptions__title {
+	font-family: 'Bebas Neue';
+	font-size: 49px;
+	line-height: 49px;
+	letter-spacing: 0.03em;
+	color: $color-sapphire;
+	margin: 0;
+	margin-bottom: 53px;
+	text-align: center;
+}
+
+.subscriptions__slider {
+	@include reset-list;
+	width: max-content;
+	display: flex;
+	align-self: center;
+	margin-bottom: 60px;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 2px;
+		background-color: rgba(120, 120, 120, 0.2);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.subscriptions__slide {
+	margin-right: 46px;
+
+	&--current {
+		.subscriptions__control {
+			border-bottom: 2px solid $color-crimson;
+			color: $color-sapphire;
+		}
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.subscriptions__control {
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 0;
+	color: $color-sapphire-transparent;
+	background-color: $color-transparent;
+	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	cursor: pointer;
+
+	&:hover {
+		border-bottom: 2px solid $color-crimson;
+		color: $color-sapphire;
+	}
+
+	&:focus,
+	&:active {
+		border-bottom: 2px solid $color-crimson;
+		color: $color-sapphire;
+	}
+}
+
+.subscriptions__list {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	z-index: 5;
+}
+
+.subscriptions__item {
+	width: 360px;
+	padding: 68px 77px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 7px solid $color-transparent;
+	background-color: $color-default-white;
+	cursor: pointer;
+
+	&:hover {
+		border: 7px solid;
+		border-image-slice: 1;
+  	border-image-source: linear-gradient(to right bottom, #D10A42, #00359F);
+	}
+
+	&:active,
+	&:focus {
+		border: 7px solid;
+		border-image-slice: 1;
+  	border-image-source: linear-gradient(to right bottom, #D10A42, #00359F);
+	}
+
+	&--current {
+		border: 7px solid;
+		border-image-slice: 1;
+  	border-image-source: linear-gradient(to right bottom, #D10A42, #00359F);
+	}
+
+	&:first-child {
+		.subscriptions__item-price {
+			&::after {
+				content: '5000';
+			}
+		}
+	}
+
+	&:nth-child(2) {
+		.subscriptions__item-price {
+			&::after {
+				content: '1700';
+			}
+		}
+	}
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	&:last-child {
+		.subscriptions__item-price {
+			&::after {
+				content: '2700';
+			}
+		}
+	}
+}
+
+.subscriptions__item-title {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 40px;
+	margin: 0;
+	margin-bottom: 22px;
+	color: $color-sapphire;
+}
+
+.subscriptions__item-additional-information {
+	color: $color-chambray;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	margin-bottom: 96px;
+}
+
+.subscriptions__item-price {
+	color: $color-egyptian-blue;
+	font-weight: 700;
+	font-size: 60px;
+	margin: 0;
+	margin-bottom: 59px;
+	position: relative;
+	z-index: 1;
+
+	&::after {
+		font-size: 100px;
+		line-height: 100px;
+		color: $color-whisper;
+		position: absolute;
+		top: -37px;
+		left: -19px;
+		z-index: -1;
+	}
+}
+
+.subscriptions__item-symbol {
+	color: $color-sapphire;
+	margin-left: 14px;
+}

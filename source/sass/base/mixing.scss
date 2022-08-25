@@ -6,6 +6,9 @@
 }
 
 @mixin button {
+  width: 100%;
+  display: block;
+  text-align: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 12px;
@@ -13,6 +16,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background-color: $color-transparent;
+  user-select: none;
 }
 
 @mixin white-button {
@@ -24,5 +28,12 @@
 @mixin black-button {
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
-  padding: 27px 44px;
+  padding: 23px 10px;
+}
+
+@mixin gradient-button {
+  @include white-button;
+  padding: 25px 10px;
+  border: none;
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 }
