@@ -1,0 +1,41 @@
+.stock__wrapper {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stock__title {
+	width: 100%;
+	font-family: 'Bebas Neue';
+	font-size: 49px;
+	line-height: 49px;
+	letter-spacing: 0.03em;
+	color: $color-sapphire;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 62px;
+}
+
+.stock__picture {
+	width: 50%;
+}
+
+.stock__list {
+	@include reset-list;
+	display: flex;
+	flex-direction: column;
+	width: calc(100% / 2 - 20px);
+}
+
+.stock__item {
+	margin-bottom: 40px;
+	padding: 35px 35px 40px 35px;
+	border: 7px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom,#d10a42,#00359f);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

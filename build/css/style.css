@@ -900,7 +900,7 @@ textarea {
 
 .coaches__control {
   position: absolute;
-  bottom: 130px;
+  bottom: 250px;
 }
 
 .coaches__control--previous {
@@ -1093,6 +1093,99 @@ textarea {
   font-size: 16px;
   line-height: 140%;
   margin: 0;
+}
+
+.stock__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.stock__title {
+  width: 100%;
+  font-family: 'Bebas Neue';
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.stock__picture {
+  width: 50%;
+}
+
+.stock__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: calc(100% / 2 - 20px);
+}
+
+.stock__item {
+  margin-bottom: 40px;
+  padding: 35px 35px 40px 35px;
+  border: 7px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
+}
+
+.stock__item:last-child {
+  margin-bottom: 0;
+}
+
+.offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+  width: calc(100% / 2 - 20px);
+}
+
+.offer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  padding: 45px 45px 50px 45px;
+  background-color: #ed0233;
+  color: #ffffff;
+}
+
+.offer__annual {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.offer__title {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.offer__more {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  color: inherit;
 }
 
 @media (max-width: 1199px) {

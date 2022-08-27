@@ -1,0 +1,27 @@
+.offer {
+	display: flex;
+	margin-right: 40px;
+	width: calc(100% / 2 - 20px);
+}
+
+.offer__content {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 45px 45px 50px 45px;
+	background-color: $color-torch-red;
+	color: $color-default-white;
+}
+
+.offer__annual {
+	order: 1;
+}
+
+.offer__title {
+	order: 2;
+}
+
+.offer__more {
+	order: 3;
+	color: inherit;
+}
