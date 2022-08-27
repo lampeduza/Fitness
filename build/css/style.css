@@ -1265,6 +1265,128 @@ textarea {
   margin-top: auto;
 }
 
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reviews__title {
+  font-family: 'Bebas Neue';
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.reviews__carousel {
+  position: relative;
+  max-width: 560px;
+}
+
+.reviews__slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #1c3374;
+  padding: 55px 62px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+}
+
+.reviews__picture {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+}
+
+.reviews__data {
+  color: #ffffff;
+  margin-left: 28px;
+}
+
+.reviews__data-title {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.reviews__data-text {
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.reviews__data-text:last-child {
+  margin-bottom: 0;
+}
+
+.reviews__controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__control {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.reviews__control--previous {
+  left: -57px;
+}
+
+.reviews__control--next {
+  right: -57px;
+}
+
+.reviews__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
