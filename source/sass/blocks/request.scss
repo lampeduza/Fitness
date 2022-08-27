@@ -1,0 +1,78 @@
+.request {
+	background-color: $color-torch-red;
+	color: $color-default-white;
+	padding: 83px 78px;
+	width: 500px;
+	height: 500px;
+}
+
+.request__main {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.request__title {
+	width: 201px;
+	font-family: 'Bebas Neue';
+	font-size: 90px;
+	line-height: 90px;
+	letter-spacing: 0.03em;
+	margin: 0;
+}
+
+.request__event {
+	margin: 0;
+	margin-left: 50px;
+	margin-top: -4px;
+}
+
+.request__type {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.request__time-point {
+	margin: 0;
+	margin-bottom: 8px;
+	border-top: 1px solid $color-default-white;
+
+	&--row {
+		display: flex;
+		align-items: center;
+		width: 64px;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.request__time-day {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+	margin-right: 7px;
+}
+
+.request__time-month {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.request__time-hours {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.request__text {
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+.request__fill {
+	padding: 24px;
+}

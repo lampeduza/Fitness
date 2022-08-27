@@ -651,6 +651,272 @@ textarea {
   margin-left: 14px;
 }
 
+.event__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.event__visual {
+  height: 500px;
+  background-color: #010145;
+}
+
+.event__figure {
+  margin: 0;
+}
+
+.request {
+  background-color: #ed0233;
+  color: #ffffff;
+  padding: 83px 78px;
+  width: 500px;
+  height: 500px;
+}
+
+.request__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.request__title {
+  width: 201px;
+  font-family: 'Bebas Neue';
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.request__event {
+  margin: 0;
+  margin-left: 50px;
+  margin-top: -4px;
+}
+
+.request__type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.request__time-point {
+  margin: 0;
+  margin-bottom: 8px;
+  border-top: 1px solid #ffffff;
+}
+
+.request__time-point--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 64px;
+}
+
+.request__time-point:last-of-type {
+  margin-bottom: 0;
+}
+
+.request__time-day {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin-right: 7px;
+}
+
+.request__time-month {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.request__time-hours {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.request__text {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.request__fill {
+  padding: 24px;
+}
+
+.coaches__wrapper {
+  position: relative;
+}
+
+.coaches__title {
+  font-family: 'Bebas Neue';
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.coaches__slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches__slide {
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.coaches__slide:last-child {
+  margin-right: 0;
+}
+
+.coaches__slide:hover .coaches__content {
+  display: block;
+}
+
+.coaches__figure {
+  display: block;
+  vertical-align: top;
+  margin: 0;
+  position: relative;
+}
+
+.coaches__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches__caption {
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.coaches__content {
+  display: none;
+  color: #ffffff;
+  background-color: rgba(16, 38, 84, 0.89);
+  width: 260px;
+  min-height: 294px;
+  padding: 52px 48px 50px 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coaches__head {
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.coaches__specialization {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.coaches__achievements {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coaches__achievement {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.coaches__achievement:last-child {
+  margin-bottom: 0;
+}
+
+.coaches__achievement::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+
+.coaches__controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches__control {
+  position: absolute;
+  bottom: 130px;
+}
+
+.coaches__control--previous {
+  left: 47px;
+}
+
+.coaches__control--next {
+  right: 47px;
+}
+
+.coaches__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;

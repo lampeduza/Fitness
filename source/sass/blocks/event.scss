@@ -1,0 +1,15 @@
+.event__wrapper {
+	display: flex;
+	align-items: center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.event__visual {
+	height: 500px;
+	background-color: $color-midnight-express;
+}
+
+.event__figure {
+	margin: 0;
+}
