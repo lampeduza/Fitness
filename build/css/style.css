@@ -1127,9 +1127,9 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .stock__title {
@@ -1146,6 +1146,10 @@ textarea {
 
 .stock__picture {
   width: 50%;
+  background-color: #3e68d7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .stock__list {
@@ -1193,6 +1197,11 @@ textarea {
   line-height: 140%;
   color: #1c3374;
   margin: 0;
+  margin-bottom: 5px;
+}
+
+.stock__item-text:last-of-type {
+  margin-bottom: 20px;
 }
 
 .stock__item-more {
@@ -1216,6 +1225,7 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 50%;
+  height: 462px;
   padding: 36px 45px 47px 45px;
   background-color: #ed0233;
   color: #ffffff;

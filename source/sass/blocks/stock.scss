@@ -3,7 +3,7 @@
 	padding-bottom: 120px;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .stock__title {
@@ -20,6 +20,8 @@
 
 .stock__picture {
 	width: 50%;
+	background-color: $color-royal-blue;
+  display: flex;
 }
 
 .stock__list {
@@ -55,6 +57,11 @@
 	line-height: 140%;
 	color: $color-resolution-blue;
 	margin: 0;
+	margin-bottom: 5px;
+
+	&:last-of-type {
+		margin-bottom: 20px;
+	}
 }
 
 .stock__item-more {
