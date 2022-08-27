@@ -8,20 +8,35 @@
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	padding: 45px 45px 50px 45px;
+	padding: 36px 45px 47px 45px;
 	background-color: $color-torch-red;
 	color: $color-default-white;
 }
 
 .offer__annual {
 	order: 1;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 156%;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.offer__price {
+	display: block;
+	font-size: 70px;
+	margin-top: 7px;
 }
 
 .offer__title {
 	order: 2;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
 }
 
 .offer__more {
 	order: 3;
 	color: inherit;
+	margin-top: auto;
 }

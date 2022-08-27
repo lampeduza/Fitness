@@ -161,6 +161,30 @@ textarea {
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 }
 
+.link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.link--white {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.link--resolution-blue {
+  font-size: 12px;
+  line-height: 14px;
+  color: #1c3374;
+  border-color: #1c3374;
+}
+
 .header {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 }
@@ -1103,6 +1127,9 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .stock__title {
@@ -1136,8 +1163,16 @@ textarea {
 }
 
 .stock__item {
+  min-height: 211px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 40px;
-  padding: 35px 35px 40px 35px;
+  padding: 20px 30px 30px 28px;
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
@@ -1145,6 +1180,23 @@ textarea {
 
 .stock__item:last-child {
   margin-bottom: 0;
+}
+
+.stock__item-title {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.stock__item-text {
+  font-size: 16px;
+  line-height: 140%;
+  color: #1c3374;
+  margin: 0;
+}
+
+.stock__item-more {
+  margin-top: auto;
 }
 
 .offer {
@@ -1164,7 +1216,7 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 50%;
-  padding: 45px 45px 50px 45px;
+  padding: 36px 45px 47px 45px;
   background-color: #ed0233;
   color: #ffffff;
 }
@@ -1173,12 +1225,26 @@ textarea {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.offer__price {
+  display: block;
+  font-size: 70px;
+  margin-top: 7px;
 }
 
 .offer__title {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
 }
 
 .offer__more {
@@ -1186,6 +1252,7 @@ textarea {
   -ms-flex-order: 3;
   order: 3;
   color: inherit;
+  margin-top: auto;
 }
 
 @media (max-width: 1199px) {

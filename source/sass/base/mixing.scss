@@ -38,3 +38,25 @@
   border: none;
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 }
+
+@mixin link {
+  width: max-content;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-transparent;
+}
+
+@mixin white-link {
+  color: $color-default-white;
+  border-color: $color-default-white;
+}
+
+@mixin resolution-blue-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-resolution-blue;
+  border-color: $color-resolution-blue;
+}

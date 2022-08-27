@@ -1,0 +1,11 @@
+.link {
+	@include link;
+
+	&--white {
+		@include white-link;
+	}
+
+	&--resolution-blue {
+		@include resolution-blue-link;
+	}
+}
