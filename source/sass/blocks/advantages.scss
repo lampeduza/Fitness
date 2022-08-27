@@ -1,0 +1,149 @@
+.advantages {
+	background-color: $color-ghost-white;
+}
+
+.advantages__wrapper {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	padding-left: 163px;
+	padding-right: 163px;
+}
+
+.advantages__title {
+	font-family: 'Bebas Neue';
+	font-size: 49px;
+	line-height: 49px;
+	letter-spacing: 0.03em;
+	color: $color-sapphire;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 57px;
+}
+
+.advantages__list {
+	@include reset-list;
+	display: grid;
+	grid-template-areas:
+		's mt p'
+		'c mt e';
+		grid-template-rows: auto;
+		grid-template-columns: repeat(3, auto);
+
+		grid-column-gap: 60px;
+		grid-row-gap: 75px;
+		align-content: center;
+}
+
+.advantages__item {
+	display: flex;
+	align-items: flex-start;
+	max-width: 340px;
+	position: relative;
+
+	&--square {
+		grid-area: s;
+		padding-left: 26px;
+		padding-bottom: 75px;
+		border-bottom: 2px solid $color-crimson-transparent;
+	}
+
+	&--parking {
+		grid-area: p;
+		padding-bottom: 75px;
+		border-bottom: 2px solid $color-crimson-transparent;
+	}
+
+	&--comfort {
+		grid-area: c;
+		padding-left: 21px;
+
+		.advantages__count {
+			margin-right: 29px;
+		}
+	}
+
+	&--experience {
+		grid-area: e;
+
+		.advantages__count {
+			margin-right: 33px;
+		}
+	}
+
+	&--main-thing {
+		max-width: 240px;
+		max-height: 307px;
+		flex-direction: column;
+		align-items: center;
+		grid-area: mt;
+		margin-top: 10px;
+		background-color: $color-resolution-blue;
+		text-align: center;
+		padding: 44px 34px 65px 34px;
+
+		.advantages__count {
+			margin: 0;
+			color: $color-default-white;
+		}
+
+		.advantages__value {
+			-webkit-text-fill-color: $color-default-white;
+			font-weight: 700;
+			font-size: 74px;
+			line-height: 88px;
+			margin: 0;
+		}
+
+		.advantages__type {
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 39px;
+			color: $color-default-white;
+			margin-bottom: 33px;
+		}
+
+		.advantages__data-text {
+			color: $color-default-white;
+		}
+	}
+}
+
+.advantages__count {
+	margin-right: 30px;
+}
+
+.advantages__value {
+	font-weight: 700;
+	font-size: 71px;
+	line-height: 68px;
+	background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+}
+
+.advantages__data {
+	color: $color-sapphire;
+}
+
+.advantages__type {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: $color-persian-blue;
+	margin: 0;
+}
+
+.advantages__data-title {
+	font-size: 22px;
+	line-height: 33px;
+	margin: 0;
+	margin-bottom: 11px;
+}
+
+.advantages__data-text {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+	margin: 0;
+}

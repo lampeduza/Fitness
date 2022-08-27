@@ -1,4 +1,5 @@
 .coaches__wrapper {
+	padding-bottom: 120px;
 	position: relative;
 }
 
@@ -15,10 +16,12 @@
 .coaches__slider {
 	@include reset-list;
 	display: flex;
+	overflow: hidden;
 }
 
 .coaches__slide {
 	margin-right: 40px;
+	flex-shrink: 0;
 	cursor: pointer;
 	position: relative;
 
