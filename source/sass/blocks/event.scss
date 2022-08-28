@@ -17,5 +17,16 @@
 @media (max-width: $desktop-width - 1px) {
 	.event__wrapper {
 		padding-top: 100px;
+		padding-bottom: 100px;
+		align-items: stretch;
+	}
+
+	.event__visual {
+		width: calc(100% - 43%);
+		height: auto;
+	}
+
+	.event__picture {
+		display: flex;
 	}
 }
