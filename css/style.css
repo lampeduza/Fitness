@@ -661,6 +661,7 @@ textarea {
   color: rgba(16, 38, 84, 0.5);
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
   padding: 10px 0;
   cursor: pointer;
   -webkit-user-select: none;
