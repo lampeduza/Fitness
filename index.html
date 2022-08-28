@@ -14,7 +14,7 @@
         <!-- header top -->
         <div class="header__top">
           <a class="header__link" href="#">
-            <svg width="87" height="20">
+            <svg width="87" height="20" aria-label="Supergym logo">
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
@@ -38,6 +38,9 @@
         <!-- header index column -->
         <div class="header__index-column">
           <picture class="header__picture">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/superman.webp 1x, img/tablet/superman@2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="img/tablet/superman.jpg 1x, img/tablet/superman@2x.jpg 2x">
+            <source type="image/webp" srcset="img/desktop/superman.webp 1x, img/desktop/superman@2x.webp 2x">
             <img class="header__image" src="img/desktop/superman.jpg" srcset="img/desktop/superman@2x.jpg 2x" width="500" height="556" alt="Человек в майке супермена">
           </picture>
           <ul class="header__social social social--vertical">
@@ -70,6 +73,9 @@
           <div class="represent__visual">
             <figure class="represent__figure">
               <picture class="represent__picture">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/jim.webp 1x, img/tablet/jim@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/tablet/jim.jpg 1x, img/tablet/jim@2x.jpg 2x">
+                <source type="image/webp" srcset="img/desktop/jim.webp 1x, img/desktop/jim@2x.webp 2x">
                 <img class="represent__image" src="img/desktop/jim.jpg" srcset="img/desktop/jim@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал">
               </picture>
               <figcaption class="visually-hidden">Зал для тренировок</figcaption>
@@ -212,6 +218,9 @@
           <div class="event__visual">
             <figure class="event__figure">
               <picture class="event__picture">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/athlete.webp 1x, img/tablet/athlete@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/tablet/athlete.jpg 1x, img/tablet/athlete@2x.jpg 2x">
+                <source type="image/webp" srcset="img/desktop/athlete.webp 1x, img/desktop/athlete@2x.webp 2x">
                 <img class="event__image" src="img/desktop/athlete.jpg" srcset="img/desktop/athlete@2x.jpg 2x" width="660" height="500" alt="Атлет в действии">
               </picture>
               <figcaption class="event__caption visually-hidden">Изображение атлета</figcaption>
@@ -224,11 +233,15 @@
       <section class="coaches">
         <div class="coaches__wrapper container">
           <h2 class="coaches__title">Тренеры</h2>
+
+          <div class="coaches__cards">
           <!-- coaches slider -->
           <ul class="coaches__slider">
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/annapavlova.webp 1x, img/desktop/annapavlova@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/annapavlova.webp 1x, img/desktop/annapavlova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/annapavlova.jpg" srcset="img/desktop/annapavlova@2x.jpg 2x" width="260" height="294" alt="Тренер Анна Павлова">
                 </picture>
                 <figcaption class="coaches__caption">Анна Павлова</figcaption>
@@ -249,6 +262,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/alexeylavrov.webp 1x, img/desktop/alexeylavrov@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/alexeylavrov.webp 1x, img/desktop/alexeylavrov@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/alexeylavrov.jpg" srcset="img/desktop/alexeylavrov@2x.jpg 2x" width="260" height="294" alt="Тренер Алексей Лавров">
                 </picture>
                 <figcaption class="coaches__caption">Алексей Лавров</figcaption>
@@ -269,6 +284,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/alexanderpashkov.webp 1x, img/desktop/alexanderpashkov@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/alexanderpashkov.webp 1x, img/desktop/alexanderpashkov@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/alexanderpashkov.jpg" srcset="img/desktop/alexanderpashkov@2x.jpg 2x" width="260" height="294" alt="Тренер Александр Пашков">
                 </picture>
                 <figcaption class="coaches__caption">Александр Пашков</figcaption>
@@ -289,6 +306,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
                 <figcaption class="coaches__caption">Мария Кетова</figcaption>
@@ -309,6 +328,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
                 <figcaption class="coaches__caption">Мария Кетова</figcaption>
@@ -329,6 +350,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
                 <figcaption class="coaches__caption">Мария Кетова</figcaption>
@@ -349,6 +372,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
                 <figcaption class="coaches__caption">Мария Кетова</figcaption>
@@ -369,6 +394,8 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
                 <figcaption class="coaches__caption">Мария Кетова</figcaption>
@@ -403,6 +430,7 @@
               </button>
             </li>
           </ul>
+        </div>
         </div>
       </section>
 
@@ -602,7 +630,7 @@
       <div class="footer__wrapper container">
         <!-- footer logo -->
         <a class="footer__link" href="#">
-          <svg width="87" height="20">
+          <svg width="87" height="20" aria-label="Supergym logo">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -621,21 +649,21 @@
         <ul class="footer__social social social--horizontal">
           <li class="social__item social__item--vk">
             <a class="social__link" href="#">
-              <svg width="15" height="15">
+              <svg width="15" height="15" aria-label="vk icon">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--ok">
             <a class="social__link" href="#">
-              <svg width="10" height="17">
+              <svg width="10" height="17" aria-label="ok icon">
                 <use xlink:href="img/sprite.svg#icon-ok"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--reddit">
             <a class="social__link" href="#">
-              <svg width="15" height="15">
+              <svg width="15" height="15" aria-label="reddit icon">
                 <use xlink:href="img/sprite.svg#icon-reddit"></use>
               </svg>
             </a>
