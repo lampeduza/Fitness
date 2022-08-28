@@ -109,3 +109,71 @@
 .header__social {
 	align-self: flex-end;
 }
+
+@media (max-width: $desktop-width - 1) {
+	.header__wrapper {
+		padding-bottom: 78px;
+	}
+	
+	.header__top {
+		padding-top: 40px;
+		margin-bottom: 25px;
+	}
+
+	.header__link {
+		svg {
+			width: 82px;
+			height: 17px;
+		}
+	}
+
+	.header__number {
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: 0.02em;
+	}
+
+	.header__content {
+		margin-top: 35px;
+		margin-right: 15px;
+    width: calc(50% - 15px);
+	}
+
+	.header__subtitle {
+		font-size: 34px;
+		line-height: 41px;
+		margin: 0;
+	}
+
+	.header__title {
+		font-size: 86px;
+		line-height: 86px;
+		margin-bottom: 42px;
+	}
+
+	.header__item {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.header__image {
+		width: 324px;
+		height: 390px;
+	}
+
+	.header__index-column {
+		width: auto;
+		max-width: 100%;
+		margin: 0 0 0 auto;
+	}
+
+	.header__buy {
+		min-width: 183px;
+		display: inline-block;
+		padding: 18px;
+	}
+
+	.header__social {
+		display: none;
+	}
+}
