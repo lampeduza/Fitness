@@ -24,6 +24,15 @@
 	letter-spacing: 0.03em;
 	color: $color-default-white;
 	user-select: none;
+
+	&:hover {
+		color: darken($color-default-white, 15);
+	}
+
+	&:focus,
+	&:active {
+		color: darken($color-default-white, 25);
+	}
 }
 
 .header__content {

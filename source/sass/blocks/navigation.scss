@@ -1,0 +1,29 @@
+.navigation__list {
+	@include reset-list;
+	display: flex;
+	align-items: center;
+}
+
+.navigation__item {
+	margin-right: 40px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.navigation__link {
+	font-size: 14px;
+	line-height: 16px;
+	color: $color-default-white;
+	user-select: none;
+
+	&:hover {
+    color: darken($color-default-white, 15);
+  }
+
+  &:focus,
+  &:active {
+    color: darken($color-default-white, 25);
+  }
+}

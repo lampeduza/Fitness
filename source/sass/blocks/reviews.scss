@@ -92,4 +92,23 @@
 	background-color: $color-transparent;
 	border: none;
 	cursor: pointer;
+
+	svg {
+		fill: $color-transparent;
+		stroke: #afafaf;
+	}
+
+	&:hover {
+		svg {
+			stroke: darken(#afafaf, 35);
+			fill: none;
+		}
+	}
+
+	&:focus,
+	&:active {
+		svg {
+			stroke: darken(#afafaf, 60);
+		}
+	}
 }

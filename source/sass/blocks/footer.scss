@@ -1,3 +1,26 @@
 .footer {
 	background-color: $color-black-russian;
 }
+
+.footer__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+
+.footer__link {
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:focus,
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.footer__social {
+	display: flex;
+}

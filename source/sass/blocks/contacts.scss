@@ -71,4 +71,18 @@
 	line-height: 21px;
 	color: inherit;
 	margin: 0;
+
+	&--number,
+	&--mail {
+		user-select: none;
+		
+		&:hover {
+    	color: lighten($color-sapphire, 25);
+  	}
+
+  	&:focus,
+  	&:active {
+  	  color: lighten($color-sapphire, 35);
+  	}
+	}
 }

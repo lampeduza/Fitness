@@ -1,5 +1,6 @@
 .link {
 	@include link;
+	user-select: none;
 
 	&--white {
 		@include white-link;
