@@ -1771,6 +1771,10 @@ textarea {
   display: flex;
 }
 
+.navigation {
+  margin-left: 10px;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;

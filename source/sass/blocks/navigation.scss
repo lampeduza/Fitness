@@ -1,3 +1,7 @@
+.navigation {
+	margin-left: 10px;
+}
+
 .navigation__list {
 	@include reset-list;
 	display: flex;
