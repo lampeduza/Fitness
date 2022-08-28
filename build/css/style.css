@@ -1852,6 +1852,11 @@ textarea {
     width: calc(50% - 15px);
   }
 
+  .header__list {
+    right: 211px;
+    bottom: 146px;
+  }
+
   .header__subtitle {
     font-size: 34px;
     line-height: 41px;
