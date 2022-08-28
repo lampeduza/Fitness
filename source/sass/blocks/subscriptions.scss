@@ -1,22 +1,25 @@
 .subscriptions {
 	background-color: $color-ghost-white;
 	position: relative;
-	overflow: hidden;
+	overflow-x: clip;
 
 	&::after {
 		content: '';
-		width: 321px;
+		width: 384px;
 		height: 384px;
 		background-image: url('../img/desktop/subscriptions-background.png');
-		background-size: 321px, 384px;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: auto, auto;
 		position: absolute;
-		right: -90px;
-		bottom: -110px;
+		right: -140px;
+    bottom: -95px;
+    z-index: 2;
 	}
 }
 
 .subscriptions__wrapper {
-	padding-top: 120px;
+	padding-top: 114px;
 	padding-bottom: 80px;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +32,7 @@
 	letter-spacing: 0.03em;
 	color: $color-sapphire;
 	margin: 0;
-	margin-bottom: 53px;
+	margin-bottom: 26px;
 	text-align: center;
 }
 
@@ -38,7 +41,7 @@
 	width: max-content;
 	display: flex;
 	align-self: center;
-	margin-bottom: 60px;
+	margin-bottom: 38px;
 	position: relative;
 
 	&::after {
@@ -71,12 +74,10 @@
 	font-family: inherit;
 	font-size: 20px;
 	line-height: 30px;
-	padding: 0;
 	color: $color-sapphire-transparent;
 	background-color: $color-transparent;
 	border: none;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 10px 0;
 	cursor: pointer;
 	user-select: none;
 
@@ -102,7 +103,7 @@
 
 .subscriptions__item {
 	width: 360px;
-	padding: 68px 77px;
+	padding: 50px 70px 61px 70px;
 	margin-right: 40px;
 	margin-bottom: 40px;
 	display: flex;
@@ -166,7 +167,7 @@
 	font-size: 26px;
 	line-height: 40px;
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 6px;
 	color: $color-sapphire;
 }
 
@@ -175,7 +176,7 @@
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0;
-	margin-bottom: 96px;
+	margin-bottom: 72px;
 }
 
 .subscriptions__item-price {
@@ -183,7 +184,7 @@
 	font-weight: 700;
 	font-size: 60px;
 	margin: 0;
-	margin-bottom: 59px;
+	margin-bottom: 45px;
 	position: relative;
 	z-index: 1;
 
@@ -192,7 +193,7 @@
 		line-height: 100px;
 		color: $color-whisper;
 		position: absolute;
-		top: -37px;
+		top: -35px;
 		left: -19px;
 		z-index: -1;
 	}

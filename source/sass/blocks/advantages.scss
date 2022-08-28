@@ -3,10 +3,7 @@
 }
 
 .advantages__wrapper {
-	padding-top: 120px;
-	padding-bottom: 120px;
-	padding-left: 163px;
-	padding-right: 163px;
+	padding: 120px 163px 111px 163px;
 }
 
 .advantages__title {
@@ -17,7 +14,7 @@
 	color: $color-sapphire;
 	text-align: center;
 	margin: 0;
-	margin-bottom: 57px;
+	margin-bottom: 58px;
 }
 
 .advantages__list {
@@ -30,7 +27,7 @@
 		grid-template-columns: repeat(3, auto);
 
 		grid-column-gap: 60px;
-		grid-row-gap: 75px;
+		grid-row-gap: 72px;
 		align-content: center;
 }
 
@@ -138,7 +135,7 @@
 	font-size: 22px;
 	line-height: 33px;
 	margin: 0;
-	margin-bottom: 11px;
+	margin-bottom: 7px;
 }
 
 .advantages__data-text {
