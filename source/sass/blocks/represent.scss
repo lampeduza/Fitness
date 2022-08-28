@@ -85,3 +85,69 @@
 .represent__action {
 	cursor: pointer;
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.represent__wrapper {
+		padding-top: 97px;
+		padding-bottom: 183px;
+		flex-direction: column;
+	}
+
+	.represent__content {
+		padding: 0;
+		margin: 0;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.represent__title {
+		font-size: 42px;
+		line-height: 42px;
+		margin-bottom: 10px;
+	}
+
+	.represent__subtitle {
+		margin-bottom: 34px;
+	}
+
+	.represent__text {
+		padding: 0 88px;
+		margin-bottom: 43px;
+
+		&:last-of-type {
+			display: none;
+		}
+	}
+
+	.represent__picture {
+		display: flex;
+	}
+
+	.represent__image {
+		width: 100%;
+		height: auto;
+	}
+
+	.represent__video {
+		left: 50%;
+    transform: translateX(-50%);
+    bottom: -87px;
+    z-index: 2;
+
+		&::before {
+			width: 266px;
+			height: 167px;
+		}
+
+		&::after {
+			width: 73px;
+			height: 73px;
+			background-size: 73px, 73px;
+		}
+	}
+
+	.represent__action {
+		width: 266px;
+		height: 167px;
+	}
+}

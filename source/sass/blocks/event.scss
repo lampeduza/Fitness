@@ -13,3 +13,9 @@
 .event__figure {
 	margin: 0;
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.event__wrapper {
+		padding-top: 100px;
+	}
+}
