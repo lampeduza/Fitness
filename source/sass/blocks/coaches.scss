@@ -24,6 +24,7 @@
 	flex-shrink: 0;
 	cursor: pointer;
 	position: relative;
+	transition: left .5s ease-in-out;
 
 	&:last-child {
 		margin-right: 0;

@@ -681,6 +681,21 @@ textarea {
   color: #102654;
 }
 
+.subscriptions__cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 5;
+}
+
+.subscriptions__card {
+  display: none;
+}
+
+.subscriptions__card--visible {
+  display: block;
+}
+
 .subscriptions__list {
   margin: 0;
   padding: 0;
@@ -692,7 +707,6 @@ textarea {
   flex-wrap: wrap;
   -ms-flex-item-align: center;
   align-self: center;
-  z-index: 5;
 }
 
 .subscriptions__item {
@@ -713,6 +727,7 @@ textarea {
   border: 7px solid rgba(255, 255, 255, 0);
   background-color: #ffffff;
   cursor: pointer;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -738,29 +753,17 @@ textarea {
   border-image-source: linear-gradient(to right bottom, #D10A42, #00359F);
 }
 
-.subscriptions__item:first-child .subscriptions__item-price::after {
-  content: '5000';
-}
-
-.subscriptions__item:nth-child(2) .subscriptions__item-price::after {
-  content: '1700';
-}
-
 .subscriptions__item:nth-child(3n) {
   margin-right: 0;
-}
-
-.subscriptions__item:last-child .subscriptions__item-price::after {
-  content: '2700';
 }
 
 .subscriptions__item-title {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
+  color: #102654;
   margin: 0;
   margin-bottom: 6px;
-  color: #102654;
 }
 
 .subscriptions__item-additional-information {
@@ -777,18 +780,20 @@ textarea {
   font-size: 60px;
   margin: 0;
   margin-bottom: 45px;
-  position: relative;
   z-index: 1;
 }
 
-.subscriptions__item-price::after {
+.subscriptions__item-shadow {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
   font-size: 100px;
   line-height: 100px;
+  margin: 0;
   color: #e8e8e8;
   position: absolute;
-  top: -35px;
-  left: -19px;
-  z-index: -1;
+  top: 155px;
+  left: 70px;
+  z-index: 0;
 }
 
 .subscriptions__item-symbol {
@@ -932,6 +937,9 @@ textarea {
   flex-shrink: 0;
   cursor: pointer;
   position: relative;
+  -webkit-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
 }
 
 .coaches__slide:last-child {
