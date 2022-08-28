@@ -2119,6 +2119,7 @@ textarea {
 
   .coaches__wrapper {
     position: static;
+    padding-bottom: 100px;
   }
 
   .coaches__cards {
