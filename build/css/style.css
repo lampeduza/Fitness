@@ -1574,6 +1574,10 @@ textarea {
   margin: 0;
 }
 
+.footer {
+  background-color: #030a1a;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
