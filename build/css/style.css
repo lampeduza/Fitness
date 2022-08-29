@@ -2398,6 +2398,7 @@ textarea {
 
   .try {
     width: 100%;
+    max-width: 900px;
   }
 
   .try::after {
@@ -2407,11 +2408,30 @@ textarea {
     background-color: #102654;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1px;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
     z-index: -1;
+  }
+
+  .try__wrapper {
+    padding: 70px 118px 70px 88px;
+  }
+
+  .try__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 31px;
+  }
+
+  .try__item {
+    margin-right: 60px;
+    width: calc(100% / 2 - 30px);
+  }
+
+  .try__item-field {
+    padding: 7px 0;
   }
 }
 
