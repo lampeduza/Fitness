@@ -534,14 +534,19 @@ textarea {
 .represent__video {
   position: absolute;
   left: -63px;
-  bottom: -115px;
+  bottom: -111px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.represent__video::before {
+.represent__video-link {
+  display: block;
+  position: relative;
+}
+
+.represent__video-link::before {
   content: '';
   width: 364px;
   height: 228px;
@@ -553,23 +558,38 @@ textarea {
   bottom: 0;
 }
 
-.represent__video::after {
-  content: '';
+.represent__video-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+}
+
+/*
+.represent__video-play {
+	padding: 0;
+	background-color: $color-transparent;
+	border: none;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 64px;
+  right: 132px;
+}
+*/
+
+.represent__video-play {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
   width: 100px;
   height: 100px;
-  background-size: 100px 100px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-image: url("../img/desktop/play.png");
-  cursor: pointer;
-}
-
-.represent__action {
-  cursor: pointer;
 }
 
 .subscriptions {
@@ -1979,16 +1999,15 @@ textarea {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -87px;
-    z-index: 2;
+    bottom: -83px;
   }
 
-  .represent__video::before {
+  .represent__video-link::before {
     width: 266px;
     height: 167px;
   }
 
-  .represent__video::after {
+  .represent__video-link::after {
     width: 73px;
     height: 73px;
     background-size: 73px, 73px;
@@ -1997,6 +2016,11 @@ textarea {
   .represent__action {
     width: 266px;
     height: 167px;
+  }
+
+  .represent__video-icon {
+    width: 73px;
+    height: 73px;
   }
 
   .subscriptions::after {
@@ -2514,17 +2538,138 @@ textarea {
   .header {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   }
+
+  .header__wrapper {
+    padding-bottom: 77px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .header__top {
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  .header__link {
+    margin-left: 2px;
+  }
+
+  .header__link svg {
+    width: 68px;
+    height: 15px;
+  }
+
+  .header__number {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin-right: 3px;
+  }
+
+  .header__content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .header__title-group {
+    margin: 0;
+  }
+
+  .header__subtitle {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 8px;
+  }
+
+  .header__title {
+    font-size: 78px;
+    line-height: 78px;
+    width: 100%;
+  }
+
+  .header__list {
+    left: 0;
+    right: auto;
+    bottom: 118px;
+  }
+
+  .header__index-column {
+    display: none;
+  }
+
+  .header__buy {
+    width: 100%;
+    padding: 21px;
+  }
+
+  .represent__wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .represent__content {
+    text-align: left;
+  }
+
+  .represent__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .represent__subtitle {
+    margin-bottom: 24px;
+  }
+
+  .represent__text {
+    padding: 0;
+    padding-right: 30px;
+    margin-bottom: 33px;
+  }
+
+  .represent__visual {
+    width: 100vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .represent__visual figure {
+    margin-bottom: 40px;
+  }
+
+  .represent__video {
+    position: relative;
+    width: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    left: auto;
+    bottom: auto;
+  }
+
+  .represent__video-link::before {
+    width: inherit;
+    height: inherit;
+  }
+
+  .represent__action {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 559px) {
+  .header__title {
+    width: 213px;
+  }
 }
 
 @media (min-width: 973px) and (max-width: 1199px) {
   .subscriptions__list {
     display: -ms-grid;
     display: grid;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .represent__video::after {
-    background-image: url("../img/desktop/play@2x.png");
   }
 }
