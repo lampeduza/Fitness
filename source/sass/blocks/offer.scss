@@ -41,3 +41,16 @@
 	color: inherit;
 	margin-top: auto;
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.offer {
+		margin: 0;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.offer__content {
+		width: 41.15%;
+		height: auto;
+	}
+}
