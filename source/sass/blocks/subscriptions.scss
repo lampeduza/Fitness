@@ -273,3 +273,37 @@
 		display: grid;
 	}
 }
+
+@media (max-width: $tablet-width - 1px) {
+	.subscriptions__wrapper {
+		padding-top: 70px;
+	}
+
+	.subscriptions__title {
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 10px;
+	}
+
+	.subscriptions__slider {
+		margin-bottom: 32px;
+	}
+
+	.subscriptions__slide {
+		margin-right: 45px;
+
+		&:first-child {
+			margin-right: 40px;
+
+			.subscriptions__control {
+				padding: 12px 7px 12px 0;
+			}
+		}
+	}
+
+	.subscriptions__control {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 12px 0;
+	}
+}
