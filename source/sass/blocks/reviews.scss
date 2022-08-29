@@ -112,3 +112,16 @@
 		}
 	}
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.reviews__wrapper {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+
+	.reviews__title {
+		font-size: 42px;
+		line-height: 42px;
+		margin-bottom: 40px;
+	}
+}

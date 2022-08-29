@@ -2,3 +2,10 @@
 	display: flex;
 	align-items: center;
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.main__index-column {
+		flex-direction: column;
+		overflow-x: clip;
+	}
+}

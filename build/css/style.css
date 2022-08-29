@@ -1904,6 +1904,14 @@ textarea {
     display: none;
   }
 
+  .main__index-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-x: clip;
+  }
+
   .represent__wrapper {
     padding-top: 97px;
     padding-bottom: 183px;
@@ -2367,6 +2375,35 @@ textarea {
   .offer__content {
     width: 41.15%;
     height: auto;
+  }
+
+  .reviews__wrapper {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .reviews__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 40px;
+  }
+
+  .try {
+    width: 100%;
+  }
+
+  .try::after {
+    content: '';
+    width: 100vw;
+    height: 100%;
+    background-color: #102654;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
   }
 }
 
