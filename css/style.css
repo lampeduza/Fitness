@@ -393,9 +393,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .social {
@@ -2398,6 +2398,7 @@ textarea {
 
   .try {
     width: 100%;
+    max-width: 900px;
   }
 
   .try::after {
@@ -2407,11 +2408,97 @@ textarea {
     background-color: #102654;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1px;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
     z-index: -1;
+  }
+
+  .try__wrapper {
+    padding: 70px 118px 70px 88px;
+  }
+
+  .try__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 31px;
+  }
+
+  .try__item {
+    margin-right: 60px;
+    width: calc(100% / 2 - 30px);
+  }
+
+  .try__item-field {
+    padding: 7px 0;
+  }
+
+  .contacts {
+    width: auto;
+  }
+
+  .contacts__wrapper {
+    padding: 70px 118px 60px 88px;
+  }
+
+  .contacts__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 31px;
+  }
+
+  .contacts__list {
+    margin: 0;
+  }
+
+  .contacts__list::before {
+    left: 56.4%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: calc(100% - 17px);
+  }
+
+  .contacts__item {
+    margin-bottom: 24px;
+  }
+
+  .contacts__item:nth-child(odd) {
+    padding-right: 40px;
+    width: 56.5%;
+  }
+
+  .contacts__item:nth-child(even) {
+    padding-left: 48px;
+    width: calc(100% - 56.5%);
+  }
+
+  .contacts__item-type {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+
+  .contacts__item-text {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .footer__wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 39px;
+  }
+
+  .footer__link svg {
+    width: 82px;
+    height: 18px;
+  }
+
+  .navigation__item {
+    margin-right: 30px;
   }
 }
 
