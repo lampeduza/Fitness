@@ -2044,6 +2044,12 @@ textarea {
   .event__visual {
     width: calc(100% - 43%);
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .event__picture {
@@ -2053,6 +2059,16 @@ textarea {
   }
 
   .request {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 43%;
     height: auto;
     padding: 51px 45px;
@@ -2060,11 +2076,18 @@ textarea {
 
   .request__main {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .request__title {
     font-size: 52px;
     line-height: 52px;
+    width: auto;
   }
 
   .request__event {
