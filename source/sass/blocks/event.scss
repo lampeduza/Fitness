@@ -24,6 +24,8 @@
 	.event__visual {
 		width: calc(100% - 43%);
 		height: auto;
+		display: flex;
+		justify-content: center;
 	}
 
 	.event__picture {
