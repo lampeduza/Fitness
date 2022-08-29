@@ -534,14 +534,19 @@ textarea {
 .represent__video {
   position: absolute;
   left: -63px;
-  bottom: -115px;
+  bottom: -111px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.represent__video::before {
+.represent__video-link {
+  display: block;
+  position: relative;
+}
+
+.represent__video-link::before {
   content: '';
   width: 364px;
   height: 228px;
@@ -553,23 +558,38 @@ textarea {
   bottom: 0;
 }
 
-.represent__video::after {
-  content: '';
+.represent__video-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+}
+
+/*
+.represent__video-play {
+	padding: 0;
+	background-color: $color-transparent;
+	border: none;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 64px;
+  right: 132px;
+}
+*/
+
+.represent__video-play {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
   width: 100px;
   height: 100px;
-  background-size: 100px 100px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-image: url("../img/desktop/play.png");
-  cursor: pointer;
-}
-
-.represent__action {
-  cursor: pointer;
 }
 
 .subscriptions {
@@ -1979,16 +1999,15 @@ textarea {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -87px;
-    z-index: 2;
+    bottom: -83px;
   }
 
-  .represent__video::before {
+  .represent__video-link::before {
     width: 266px;
     height: 167px;
   }
 
-  .represent__video::after {
+  .represent__video-link::after {
     width: 73px;
     height: 73px;
     background-size: 73px, 73px;
@@ -1997,6 +2016,11 @@ textarea {
   .represent__action {
     width: 266px;
     height: 167px;
+  }
+
+  .represent__video-icon {
+    width: 73px;
+    height: 73px;
   }
 
   .subscriptions::after {
@@ -2626,7 +2650,7 @@ textarea {
     bottom: auto;
   }
 
-  .represent__video::before {
+  .represent__video-link::before {
     width: inherit;
     height: inherit;
   }
@@ -2647,11 +2671,5 @@ textarea {
   .subscriptions__list {
     display: -ms-grid;
     display: grid;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .represent__video::after {
-    background-image: url("../img/desktop/play@2x.png");
   }
 }

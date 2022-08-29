@@ -49,8 +49,13 @@
 .represent__video {
 	position: absolute;
 	left: -63px;
-	bottom: -115px;
+	bottom: -111px;
 	user-select: none;
+}
+
+.represent__video-link {
+	display: block;
+	position: relative;
 
 	&::before {
 		content: '';
@@ -63,27 +68,36 @@
 		right: 0;
 		bottom: 0;
 	}
-
-	&::after {
-		content: '';
-		width: 100px;
-		height: 100px;
-		background-size: 100px 100px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-image: url('../img/desktop/play.png');
-		cursor: pointer;
-
-		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-   		background-image: url('../img/desktop/play@2x.png');
-  	}
-	}
 }
 
-.represent__action {
-	cursor: pointer;
+.represent__video-picture {
+	display: flex;
+	z-index: 0;
+}
+
+/*
+.represent__video-play {
+	padding: 0;
+	background-color: $color-transparent;
+	border: none;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 64px;
+  right: 132px;
+}
+*/
+
+.represent__video-play {
+	padding: 0;
+	background-color: $color-transparent;
+	border: none;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 }
 
 @media (max-width: $desktop-width - 1px) {
@@ -131,9 +145,10 @@
 	.represent__video {
 		left: 50%;
     transform: translateX(-50%);
-    bottom: -87px;
-    z-index: 2;
+    bottom: -83px;
+	}
 
+	.represent__video-link {
 		&::before {
 			width: 266px;
 			height: 167px;
@@ -149,6 +164,11 @@
 	.represent__action {
 		width: 266px;
 		height: 167px;
+	}
+
+	.represent__video-icon {
+		width: 73px;
+		height: 73px;
 	}
 }
 
@@ -194,7 +214,9 @@
 		transform: none;
 		left: auto;
 		bottom: auto;
+	}
 
+	.represent__video-link {
 		&::before {
 			width: inherit;
 			height: inherit;
