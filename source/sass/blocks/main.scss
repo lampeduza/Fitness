@@ -1,6 +1,6 @@
 .main__index-column {
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 }
 
 @media (max-width: $desktop-width - 1px) {

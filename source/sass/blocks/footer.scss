@@ -24,3 +24,18 @@
 .footer__social {
 	display: flex;
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.footer__wrapper {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		padding-right: 39px;
+	}
+
+	.footer__link {
+		svg {
+			width: 82px;
+    	height: 18px;
+		}
+	}
+}

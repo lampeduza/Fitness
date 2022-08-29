@@ -31,3 +31,9 @@
     color: darken($color-default-white, 25);
   }
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.navigation__item {
+		margin-right: 30px;
+	}
+}
