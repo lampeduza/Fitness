@@ -144,3 +144,75 @@
 	line-height: 140%;
 	margin: 0;
 }
+
+@media (max-width: $desktop-width - 1px) {
+	.advantages__wrapper {
+		padding-top: 100px;
+		padding-bottom: 90px;
+	}
+
+	.advantages__title {
+		font-size: 42px;
+		line-height: 42px;
+		margin-bottom: 40px;
+	}
+
+	.advantages__list {
+		grid-template-rows: repeat(3, auto);
+		grid-template-columns: repeat(2, auto);
+		grid-template-areas:
+			's p'
+			'mt mt'
+			'c e';
+		grid-row-gap: 40px;
+		grid-column-gap: 50px;
+		align-content: normal;
+		justify-content: center;
+	}
+
+	.advantages__item {
+		padding: 0;
+
+		&--square,
+		&--parking {
+			border: none;
+		}
+
+		&--main-thing {
+			width: calc(100% - 236px);
+			max-width: 100%;
+			min-height: 239px;
+			margin: 0 118px;
+			padding: 26px 135px 40px;
+
+			.advantages__value {
+				margin-right: 6px;
+			}
+
+			.advantages__type {
+				font-size: 22px;
+				line-height: 33px;
+				margin-top: -8px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.advantages__count {
+		margin-right: 29px;
+	}
+
+	.advantages__value {
+		font-size: 58px;
+		line-height: 58px;
+	}
+
+	.advantages__type {
+		line-height: 14px;
+	}
+
+	.advantages__data-title {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
