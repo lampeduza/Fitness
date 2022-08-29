@@ -1847,6 +1847,10 @@ textarea {
     padding: 0 45px;
   }
 
+  .header {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  }
+
   .header__wrapper {
     padding-bottom: 78px;
   }
@@ -2505,6 +2509,10 @@ textarea {
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .header {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   }
 }
 
