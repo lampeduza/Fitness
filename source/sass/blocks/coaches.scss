@@ -234,6 +234,10 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
+	.coaches__wrapper {
+		padding-bottom: 70px;
+	}
+
 	.coaches__title {
 		font-size: 32px;
 		line-height: 32px;
@@ -247,10 +251,9 @@
 	}
 
 	.coaches__slide {
-		margin: 0;
 		width: 226px;
 		height: 274px;
-		transform: translateX(-452px);
+		transform: translateX(-513px);
 	}
 
 	.coaches__images {
