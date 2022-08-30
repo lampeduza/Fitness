@@ -149,3 +149,10 @@
 		border-width: 2px;
 	}
 }
+
+@media (max-width: $tablet-width - 1px) {
+	.request {
+		width: 100%;
+		max-width: 440px;
+	}
+}

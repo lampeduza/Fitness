@@ -275,8 +275,15 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
+	.subscriptions {
+		&::after {
+			content: none;
+		}
+	}
+
 	.subscriptions__wrapper {
 		padding-top: 70px;
+		padding-bottom: 36px;
 	}
 
 	.subscriptions__title {
@@ -305,5 +312,38 @@
 		font-size: 16px;
 		line-height: 24px;
 		padding: 12px 0;
+	}
+
+	.subscriptions__item {
+		padding: 45px 34px;
+		margin-bottom: 37px;
+	}
+
+	.subscriptions__item-title {
+		font-size: 22px;
+		line-height: 110.16%;
+	}
+
+	.subscriptions__item-additional-information {
+		margin-bottom: 53px;
+		margin-left: 5px;
+	}
+
+	.subscriptions__item-price {
+		font-size: 48px;
+		line-height: 72px;
+		margin-bottom: 30px;
+	}
+
+	.subscriptions__item-shadow {
+		font-size: 80px;
+		line-height: 120px;
+		top: 110px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.subscriptions__button {
+		padding: 24px;
 	}
 }

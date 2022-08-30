@@ -1114,19 +1114,13 @@ textarea {
   cursor: pointer;
 }
 
-.coaches__button svg {
-  fill: rgba(255, 255, 255, 0);
-  stroke: #afafaf;
+.coaches__button:hover {
+  opacity: 0.8;
 }
 
-.coaches__button:hover svg {
-  stroke: #565656;
-  fill: none;
-}
-
-.coaches__button:focus svg,
-.coaches__button:active svg {
-  stroke: #161616;
+.coaches__button:focus,
+.coaches__button:active {
+  opacity: 0.4;
 }
 
 .advantages {
@@ -2193,7 +2187,8 @@ textarea {
 
   .coaches__cards {
     position: relative;
-    width: 566px;
+    width: 100%;
+    padding: 0 56px;
     margin: 0 auto;
   }
 
@@ -2222,15 +2217,15 @@ textarea {
   }
 
   .coaches__control {
-    top: 130px;
+    top: 132px;
   }
 
   .coaches__control--previous {
-    left: -57px;
+    left: 0;
   }
 
   .coaches__control--next {
-    right: -57px;
+    right: 0;
   }
 
   .coaches__content {
@@ -2660,8 +2655,13 @@ textarea {
     height: auto;
   }
 
+  .subscriptions::after {
+    content: none;
+  }
+
   .subscriptions__wrapper {
     padding-top: 70px;
+    padding-bottom: 36px;
   }
 
   .subscriptions__title {
@@ -2690,6 +2690,115 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     padding: 12px 0;
+  }
+
+  .subscriptions__item {
+    padding: 45px 34px;
+    margin-bottom: 37px;
+  }
+
+  .subscriptions__item-title {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .subscriptions__item-additional-information {
+    margin-bottom: 53px;
+    margin-left: 5px;
+  }
+
+  .subscriptions__item-price {
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+
+  .subscriptions__item-shadow {
+    font-size: 80px;
+    line-height: 120px;
+    top: 110px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .subscriptions__button {
+    padding: 24px;
+  }
+
+  .event__wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .event__visual {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .request {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .coaches__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 42px;
+  }
+
+  .coaches__cards {
+    width: 100%;
+    height: auto;
+    padding: 0 33px;
+  }
+
+  .coaches__slide {
+    margin: 0;
+    width: 226px;
+    height: 274px;
+    -webkit-transform: translateX(-452px);
+    -ms-transform: translateX(-452px);
+    transform: translateX(-452px);
+  }
+
+  .coaches__images {
+    width: 226px;
+    height: 274px;
+  }
+
+  .coaches__content {
+    padding: 43px 30px 58px;
+  }
+
+  .coaches__specialization {
+    margin-top: -5px;
+  }
+
+  .coaches__achievement {
+    padding-left: 20px;
+  }
+
+  .coaches__achievement::before {
+    left: 4px;
+    top: 8px;
+  }
+
+  .coaches__control {
+    top: 128px;
+  }
+
+  .arrow__image {
+    width: 10px;
+    height: 19px;
   }
 }
 

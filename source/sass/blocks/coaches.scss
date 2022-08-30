@@ -152,23 +152,13 @@
 	border: none;
 	cursor: pointer;
 
-	svg {
-		fill: $color-transparent;
-		stroke: #afafaf;
-	}
-
 	&:hover {
-		svg {
-			stroke: darken(#afafaf, 35);
-			fill: none;
-		}
+		opacity: 0.8;
 	}
 
 	&:focus,
 	&:active {
-		svg {
-			stroke: darken(#afafaf, 60);
-		}
+		opacity: 0.4;
 	}
 }
 
@@ -180,7 +170,8 @@
 
 	.coaches__cards {
 		position: relative;
-		width: 566px;
+		width: 100%;
+		padding: 0 56px;
 		margin: 0 auto;
 	}
 
@@ -207,14 +198,14 @@
 	}
 
 	.coaches__control {
-		top: 130px;
+		top: 132px;
 
 		&--previous {
-			left: -57px;
+			left: 0;
 		}
 
 		&--next {
-			right: -57px;
+			right: 0;
 		}
 	}
 
@@ -239,5 +230,52 @@
 			left: 8px;
 			top: 10px;
 		}
+	}
+}
+
+@media (max-width: $tablet-width - 1px) {
+	.coaches__title {
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 42px;
+	}
+
+	.coaches__cards {
+		width: 100%;
+		height: auto;
+		padding: 0 33px;
+	}
+
+	.coaches__slide {
+		margin: 0;
+		width: 226px;
+		height: 274px;
+		transform: translateX(-452px);
+	}
+
+	.coaches__images {
+		width: 226px;
+		height: 274px;
+	}
+
+	.coaches__content {
+		padding: 43px 30px 58px;
+	}
+
+	.coaches__specialization {
+		margin-top: -5px;
+	}
+
+	.coaches__achievement {
+		padding-left: 20px;
+
+		&::before {
+			left: 4px;
+    	top: 8px;
+		}
+	}
+
+	.coaches__control {
+		top: 128px;
 	}
 }
