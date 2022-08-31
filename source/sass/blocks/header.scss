@@ -104,14 +104,14 @@
 	width: 60.3%;
 	margin-left: 5.6%;
 	max-width: 700px;
-}
 
-.header__picture {
-	display: flex;
-	width: 500px;
-	height: auto;
-	background-color: $color-persian-blue;
-	margin-top: -6px;
+	picture {
+		display: flex;
+		width: 500px;
+		height: auto;
+		background-color: $color-persian-blue;
+		margin-top: -6px;
+	}
 }
 
 .header__social {
@@ -173,25 +173,21 @@
 		line-height: 21px;
 	}
 
-	.header__picture {
-		width: 100%;
-		background-color: $color-persian-blue;
-	}
-
-	.header__picture {
-		width: 324px;
-		height: 390px;
-	}
-
-	.header__image {
-		width: 324px;
-		height: 390px;
-	}
-
 	.header__index-column {
 		width: auto;
 		max-width: 100%;
 		margin: 0 0 0 auto;
+
+		picture {
+			width: 324px;
+			height: 390px;
+			background-color: $color-persian-blue;
+		}
+
+		img {
+			width: 324px;
+			height: 390px;
+		}
 	}
 
 	.header__buy {

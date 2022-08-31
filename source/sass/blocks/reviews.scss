@@ -151,11 +151,11 @@
 		margin: 0;
 		margin-left: 16px;
 		grid-row: 1 / 2;
-	}
 
-	.reviews__image {
-		width: 68px;
-		height: 68px;
+		img {
+			width: 68px;
+			height: 68px;
+		}
 	}
 
 	.reviews__data-title {

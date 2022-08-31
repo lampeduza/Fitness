@@ -193,9 +193,11 @@
 		width: 100%;
 	}
 
-	.coaches__image {
-		width: 268px;
-		height: 294px;
+	.coaches__picture {
+		img {
+			width: 268px;
+			height: 294px;
+		}
 	}
 
 	.coaches__control {
@@ -257,9 +259,11 @@
 		transform: translateX(-513px);
 	}
 
-	.coaches__images {
-		width: 226px;
-		height: 274px;
+	.coaches__picture {
+		img {
+			width: 226px;
+			height: 274px;
+		}
 	}
 
 	.coaches__content {

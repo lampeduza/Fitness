@@ -22,10 +22,10 @@
 	width: 50%;
 	background-color: $color-royal-blue;
   display: flex;
-}
 
-.stock__image {
-	object-fit: cover;
+  img {
+		object-fit: cover;
+	}
 }
 
 .stock__list {
@@ -86,11 +86,11 @@
 
 	.stock__picture {
 		width: calc(100% - 41.15%);
-	}
 
-	.stock__image {
-		width: 100%;
-		height: auto;
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	.stock__list {
