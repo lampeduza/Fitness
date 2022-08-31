@@ -983,6 +983,7 @@ textarea {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   cursor: pointer;
+  background-color: #d3d3d3;
   position: relative;
   -webkit-transition: left .5s ease-in-out;
   -o-transition: left .5s ease-in-out;
