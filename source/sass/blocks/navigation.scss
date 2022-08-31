@@ -37,3 +37,54 @@
 		margin-right: 30px;
 	}
 }
+
+@media (max-width: $tablet-width - 1px) {
+	.navigation {
+		margin: 0;
+		grid-area: navigation;
+	}
+
+	.navigation__list {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: auto;
+		grid-column-gap: 15px;
+    grid-row-gap: 21px;
+		grid-template-areas:
+			'. stocks'
+			'services coaches'
+			'subscriptions schedule';
+		 grid-auto-flow: row; 
+		margin-top: -21px;
+	}
+
+	.navigation__item {
+		margin: 0;
+		grid-area: auto;
+
+		&--stocks {
+			grid-area: stocks;
+		}
+
+		&--services {
+			grid-area: services;
+		}
+
+		&--coaches {
+			grid-area: coaches;
+		}
+
+		&--subscriptions {
+			grid-area: subscriptions;
+		}
+
+		&--schedule {
+			grid-area: schedule;
+		}
+	}
+
+	.navigation__link {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}

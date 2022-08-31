@@ -1491,6 +1491,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .reviews__slide {
@@ -2604,6 +2605,10 @@ textarea {
     padding: 21px;
   }
 
+  .social--horizontal .social__item {
+    margin-bottom: 11px;
+  }
+
   .represent__wrapper {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -3000,6 +3005,10 @@ textarea {
     margin-bottom: 8px;
   }
 
+  .reviews__wrapper {
+    padding-bottom: 69px;
+  }
+
   .reviews__title {
     font-size: 32px;
     line-height: 32px;
@@ -3062,6 +3071,217 @@ textarea {
 
   .reviews__control--next {
     right: 0;
+  }
+
+  .try__wrapper {
+    padding: 70px 0 71px 0;
+  }
+
+  .try__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 37px;
+  }
+
+  .try__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .try__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 37px;
+  }
+
+  .try__item-field {
+    padding: 4px 0;
+  }
+
+  .try__send {
+    border-width: 3px;
+  }
+
+  .contacts__wrapper {
+    padding: 70px 0 60px 0;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 33px;
+  }
+
+  .contacts__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__list::before {
+    content: none;
+  }
+
+  .contacts__item {
+    padding: 0;
+    margin-bottom: 19px;
+  }
+
+  .contacts__item:nth-child(odd),
+  .contacts__item:nth-child(even) {
+    padding: 0;
+    width: 100%;
+  }
+
+  .contacts__item:last-child {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts__item:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 15px;
+  }
+
+  .contacts__item:nth-last-child(2) {
+    margin-bottom: 17px;
+  }
+
+  .contacts__item-type {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+
+  .contacts__item-text {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .footer__wrapper {
+    padding: 50px 15px 41px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'logo logo' 'navigation navigation' 'navigation navigation' 'social social';
+  }
+
+  .footer__link {
+    grid-area: logo;
+  }
+
+  .footer__link svg {
+    width: 68px;
+    height: 15px;
+  }
+
+  .footer__social {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-area: social;
+    margin-top: 36px;
+  }
+
+  .navigation {
+    margin: 0;
+    grid-area: navigation;
+  }
+
+  .navigation__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 15px 50%;
+    grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 21px;
+    grid-template-areas: '. stocks' 'services coaches' 'subscriptions schedule';
+    grid-auto-flow: row;
+    margin-top: -21px;
+  }
+
+  .navigation__item {
+    margin: 0;
+    grid-area: auto;
+  }
+
+  .navigation__item--stocks {
+    grid-area: stocks;
+  }
+
+  .navigation__item--services {
+    grid-area: services;
+  }
+
+  .navigation__item--coaches {
+    grid-area: coaches;
+  }
+
+  .navigation__item--subscriptions {
+    grid-area: subscriptions;
+  }
+
+  .navigation__item--schedule {
+    grid-area: schedule;
+  }
+
+  .navigation__link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .navigation__item--stocks {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .navigation__item--services {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .navigation__item--coaches {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .navigation__item--subscriptions {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .navigation__item--schedule {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .footer__link {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .footer__social {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .navigation {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
 
   .arrow__image {

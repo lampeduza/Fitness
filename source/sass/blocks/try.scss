@@ -108,3 +108,33 @@
 		padding: 7px 0;
 	}
 }
+
+@media (max-width: $tablet-width - 1px) {
+	.try__wrapper {
+		padding: 70px 0 71px 0;
+	}
+
+	.try__title {
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 37px;
+	}
+
+	.try__list {
+		flex-direction: column;
+	}
+
+	.try__item {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 37px;
+	}
+
+	.try__item-field {
+		padding: 4px 0;
+	}
+
+	.try__send {
+		border-width: 3px;
+	}
+}

@@ -39,3 +39,32 @@
 		}
 	}
 }
+
+@media (max-width: $tablet-width - 1px) {
+	.footer__wrapper {
+		padding: 50px 15px 41px;
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: auto;
+		grid-template-areas: 
+			'logo logo'
+			'navigation navigation'
+			'navigation navigation'
+			'social social';
+	}
+
+	.footer__link {
+		grid-area: logo;
+
+		svg {
+			width: 68px;
+			height: 15px;
+		}
+	}
+
+	.footer__social {
+		flex-wrap: wrap;
+		grid-area: social;
+		margin-top: 36px;
+	}
+}

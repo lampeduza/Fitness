@@ -62,3 +62,13 @@
 		}
 	}
 }
+
+@media (max-width: $tablet-width - 1px) {
+	.social {
+		&--horizontal {
+			.social__item {
+				margin-bottom: 11px;
+			}
+		}
+	}
+}
