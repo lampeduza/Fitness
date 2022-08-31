@@ -53,14 +53,13 @@
 	line-height: 16px;
 	width: 100%;
 	padding: 8px 0;
-	color: $color-default-white;
+	color: darken($color-default-white, 20);
 	background-color: $color-transparent;
 	border: none;
 	border-bottom: 1px solid $color-light-slate-grey;
 
 	&::placeholder {
 		color: $color-default-white;
-
 	}
 }
 
