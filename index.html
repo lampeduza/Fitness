@@ -7,6 +7,8 @@
     <meta name="description" content="Описание проекта">
     <title>Фитнес | Главная страница</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/bebas-neue/regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <header class="header">
@@ -38,8 +40,10 @@
         <!-- header index column -->
         <div class="header__index-column">
           <picture class="header__picture">
+            <!-- Tablet and Mobile 1x: w 324px, h 390px; 2x w 648px, h 780px; -->
             <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/superman.webp 1x, img/tablet/superman@2x.webp 2x">
             <source media="(max-width: 1199px)" srcset="img/tablet/superman.jpg 1x, img/tablet/superman@2x.jpg 2x">
+            <!-- Desktop 1x: w 500px, h 556px; 2x w 1000px, h 1112px; -->
             <source type="image/webp" srcset="img/desktop/superman.webp 1x, img/desktop/superman@2x.webp 2x">
             <img class="header__image" src="img/desktop/superman.jpg" srcset="img/desktop/superman@2x.jpg 2x" width="500" height="556" alt="Человек в майке супермена">
           </picture>
@@ -73,10 +77,13 @@
           <div class="represent__visual">
             <figure class="represent__figure">
               <picture class="represent__picture">
+                <!-- Mobile 1x: w 320px, h 313px; 2x w 640px, h 626px; -->
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/jim.webp 1x, img/mobile/jim@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/mobile/jim.jpg 1x, img/mobile/jim@2x.jpg 2x">
+                <!-- Tablet 1x: w 660px, h 401px; 2x w 1320px, h 802px; -->
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/jim.webp 1x, img/tablet/jim@2x.webp 2x">
                 <source media="(max-width: 1199px)" srcset="img/tablet/jim.jpg 1x, img/tablet/jim@2x.jpg 2x">
+                <!-- Desktop 1x: w 678px, h 345px; 2x w 1356px, h 690px; -->
                 <source type="image/webp" srcset="img/desktop/jim.webp 1x, img/desktop/jim@2x.webp 2x">
                 <img class="represent__image" src="img/desktop/jim.jpg" srcset="img/desktop/jim@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал">
               </picture>
@@ -86,10 +93,13 @@
             <div class="represent__video">
               <a class="represent__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" target="_blank">
                 <picture class="represent__video-picture">
+                  <!-- Mobile 1x: w 320px, h 167px; 2x w 640px, h 334px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/video-picture.webp 1x, img/mobile/video-picture@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mobile/video-picture.jpg 1x, img/mobile/video-picture@2x.jpg 2x">
+                  <!-- Tablet 1x: w 266px, h 167px; 2x w 532px, h 334px; -->
                   <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/video-picture.webp 1x, img/tablet/video-picture@2x.webp 2x">
                   <source media="(max-width: 1199px)" srcset="img/tablet/video-picture.jpg 1x, img/tablet/video-picture@2x.jpg 2x">
+                  <!-- Desktop 1x: w 364px, h 228px; 2x w 728px, h 456px; -->
                   <source type="image/webp" srcset="img/desktop/video-picture.webp 1x, img/desktop/video-picture@2x.webp 2x">
                   <img class="represent__action" src="img/desktop/video-picture.jpg" srcset="img/desktop/video-picture@2x.jpg 2x" width="364" height="228" alt="Бесплатные интерактивные онлайн-курсы">
                 </picture>
@@ -97,6 +107,7 @@
 
               <button class="represent__video-play" type="button">
                 <picture>
+                  <!-- Desktop, Tablet, Mobile 1x: w 100px, h 100px; 2x w 200px, h 200px; -->
                   <source type="image/webp" srcset="img/desktop/play.webp 1x, img/desktop/play@2x.webp 2x">
                   <img class="represent__video-icon" src="img/desktop/play.png" srcset="img/desktop/play@2x.png 2x" width="100" height="100" alt="Запустить видео">
                 </picture>
@@ -244,10 +255,13 @@
           <div class="event__visual">
             <figure class="event__figure">
               <picture class="event__picture">
+                <!-- Mobile 1x: w 290px, h 292px; 2x w 580px, h 584px; -->
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/athlete.webp 1x, img/mobile/athlete@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/mobile/athlete.jpg 1x, img/mobile/athlete@2x.jpg 2x">
+                <!-- Tablet 1x: w 386px, h 292px; 2x w 772px, h 584px; -->
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/athlete.webp 1x, img/tablet/athlete@2x.webp 2x">
                 <source media="(max-width: 1199px)" srcset="img/tablet/athlete.jpg 1x, img/tablet/athlete@2x.jpg 2x">
+                <!-- Desktop 1x: w 660px, h 500px; 2x w 1320px, h 1000px; -->
                 <source type="image/webp" srcset="img/desktop/athlete.webp 1x, img/desktop/athlete@2x.webp 2x">
                 <img class="event__image" src="img/desktop/athlete.jpg" srcset="img/desktop/athlete@2x.jpg 2x" width="660" height="500" alt="Атлет в действии">
               </picture>
@@ -268,7 +282,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/annapavlova.webp 1x, img/desktop/annapavlova@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/annapavlova.webp 1x, img/desktop/annapavlova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/annapavlova.jpg" srcset="img/desktop/annapavlova@2x.jpg 2x" width="260" height="294" alt="Тренер Анна Павлова">
                 </picture>
@@ -290,7 +304,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/alexeylavrov.webp 1x, img/desktop/alexeylavrov@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/alexeylavrov.webp 1x, img/desktop/alexeylavrov@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/alexeylavrov.jpg" srcset="img/desktop/alexeylavrov@2x.jpg 2x" width="260" height="294" alt="Тренер Алексей Лавров">
                 </picture>
@@ -312,7 +326,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/alexanderpashkov.webp 1x, img/desktop/alexanderpashkov@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/alexanderpashkov.webp 1x, img/desktop/alexanderpashkov@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/alexanderpashkov.jpg" srcset="img/desktop/alexanderpashkov@2x.jpg 2x" width="260" height="294" alt="Тренер Александр Пашков">
                 </picture>
@@ -334,7 +348,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
@@ -356,7 +370,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
@@ -378,7 +392,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
@@ -400,7 +414,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
@@ -422,7 +436,7 @@
             <li class="coaches__slide">
               <figure class="coaches__figure">
                 <picture class="coaches__picture">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
+                  <!-- Desktop, Tablet, Mobile 1x: w 260px, h 294px; 2x w 520px, h 588px; -->
                   <source type="image/webp" srcset="img/desktop/mariaketova.webp 1x, img/desktop/mariaketova@2x.webp 2x">
                   <img class="coaches__image" src="img/desktop/mariaketova.jpg" srcset="img/desktop/mariaketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова">
                 </picture>
@@ -446,8 +460,10 @@
             <li class="coaches__control coaches__control--previous">
               <button class="coaches__button" type="button" aria-label="Предыдущий слайд">
                 <picture class="coaches__icon arrow">
+                  <!-- Mobile 1x: w 12px, h 21px; 2x w 23px, h 40px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/previous.webp 1x, img/mobile/previous@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mobile/previous.png 1x, img/mobile/previous@2x.png 2x">
+                  <!-- Desktop, Tablet 1x: w 13px, h 32px; 2x w 36px, h 64px; -->
                   <source type="image/webp" srcset="img/desktop/previous.webp 1x, img/desktop/previous@2x.webp 2x">
                   <img class="arrow__image" src="img/desktop/previous.png" srcset="img/desktop/previous@2x.png 2x" width="16" height="32" alt="Стрелка назад">
                 </picture>
@@ -461,8 +477,10 @@
             <li class="coaches__control coaches__control--next">
               <button class="coaches__button" type="button" aria-label="Следующий слайд">
                 <picture class="coaches__icon arrow">
+                  <!-- Mobile 1x: w 12px, h 21px; 2x w 23px, h 40px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/next.webp 1x, img/mobile/next@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mobile/next.png 1x, img/mobile/next@2x.png 2x">
+                    <!-- Desktop, Tablet 1x: w 13px, h 32px; 2x w 36px, h 64px; -->
                   <source type="image/webp" srcset="img/desktop/next.webp 1x, img/desktop/next@2x.webp 2x">
                   <img class="arrow__image" src="img/desktop/next.png" srcset="img/desktop/next@2x.png 2x" width="16" height="32" alt="Стрелка вперед">
                 </picture>
@@ -551,10 +569,13 @@
             </div>
 
             <picture class="stock__picture">
+              <!-- Mobile 1x: w 290px, h 299px; 2x w 580px, h 598px; -->
               <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/fitness-model.webp 1x, img/mobile/fitness-model@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/mobile/fitness-model.jpg 1x, img/mobile/fitness-model@2x.jpg 2x">
+              <!-- Tablet 1x: w 399px, h 462px; 2x w 798px, h 924px; -->
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/fitness-model.webp 1x, img/tablet/fitness-model@2x.webp 2x">
               <source media="(max-width: 1199px)" srcset="img/tablet/fitness-model.jpg 1x, img/tablet/fitness-model@2x.jpg 2x">
+              <!-- Desktop 1x: w 280px, h 462px; 2x w 560px, h 924px; -->
               <source type="image/webp" srcset="img/desktop/fitness-model.webp 1x, img/desktop/fitness-model@2x.webp 2x">
               <img class="stock__image" src="img/desktop/fitness-model.jpg" srcset="img/desktop/fitness-model@2x.jpg 2x" width="280" height="462" alt="Фитнес модель">
             </picture>
@@ -585,8 +606,10 @@
             <ul class="reviews__slider">
               <li class="reviews__slide">
                 <picture class="reviews__picture">
+                  <!-- Mobile 1x: w 68px, h 68px; 2x w 136px, h 136px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/annaorlova-portrait.webp 1x, img/mobile/annaorlova-portrait@2x.webp 2x">
                   <source  media="(max-width: 767px)" srcset="img/mobile/annaorlova-portrait.png 1x, img/mobile/annaorlova-portrait@2x.png 2x">
+                  <!-- Desktop, Tablet 1x: w 80px, h 80px; 2x w 160px, h 160px; -->
                   <source type="image/webp" srcset="img/desktop/annaorlova-portrait.webp 1x, img/desktop/annaorlova-portrait@2x.webp 2x">
                   <img class="reviews__image" src="img/desktop/annaorlova-portrait.png" srcset="img/desktop/annaorlova-portrait@2x.png 2x" width="80" height="80" alt="Портрет Анны Орловой">
                 </picture>
@@ -595,8 +618,10 @@
               </li>
               <li class="reviews__slide">
                 <picture class="reviews__picture">
+                  <!-- Mobile 1x: w 68px, h 68px; 2x w 136px, h 136px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/annaorlova-portrait.webp 1x, img/mobile/annaorlova-portrait@2x.webp 2x">
                   <source  media="(max-width: 767px)" srcset="img/mobile/annaorlova-portrait.png 1x, img/mobile/annaorlova-portrait@2x.png 2x">
+                  <!-- Desktop, Tablet 1x: w 80px, h 80px; 2x w 160px, h 160px; -->
                   <source type="image/webp" srcset="img/desktop/annaorlova-portrait.webp 1x, img/desktop/annaorlova-portrait@2x.webp 2x">
                   <img class="reviews__image" src="img/desktop/annaorlova-portrait.png" srcset="img/desktop/annaorlova-portrait@2x.png 2x" width="80" height="80" alt="Портрет сестры близница Анны Орловой">
                 </picture>
@@ -610,8 +635,10 @@
               <li class="reviews__control reviews__control--previous">
                 <button class="reviews__button" type="button" aria-label="Предыдущий слайд">
                   <picture class="reviews__icon arrow">
+                  <!-- Mobile 1x: w 12px, h 21px; 2x w 23px, h 40px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/previous.webp 1x, img/mobile/previous@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mobile/previous.png 1x, img/mobile/previous@2x.png 2x">
+                  <!-- Desktop, Tablet 1x: w 13px, h 32px; 2x w 36px, h 64px; -->
                   <source type="image/webp" srcset="img/desktop/previous.webp 1x, img/desktop/previous@2x.webp 2x">
                   <img class="arrow__image" src="img/desktop/previous.png" srcset="img/desktop/previous@2x.png 2x" width="16" height="32" alt="Стрелка назад">
                 </picture>
@@ -625,8 +652,10 @@
               <li class="reviews__control reviews__control--next">
                 <button class="reviews__button" type="button" aria-label="Следующий слайд">
                   <picture class="reviews__icon arrow">
+                  <!-- Mobile 1x: w 12px, h 21px; 2x w 23px, h 40px; -->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/next.webp 1x, img/mobile/next@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mobile/next.png 1x, img/mobile/next@2x.png 2x">
+                  <!-- Desktop, Tablet 1x: w 13px, h 32px; 2x w 36px, h 64px; -->
                   <source type="image/webp" srcset="img/desktop/next.webp 1x, img/desktop/next@2x.webp 2x">
                   <img class="arrow__image" src="img/desktop/next.png" srcset="img/desktop/next@2x.png 2x" width="16" height="32" alt="Стрелка вперед">
                 </picture>
@@ -653,11 +682,11 @@
               <ul class="try__list">
                 <li class="try__item">
                   <label class="visually-hidden" for="name-field">Ваше имя:</label>
-                  <input class="try__item-field" type="text" name="name-field" id="name-field" placeholder="Имя" required>
+                  <input class="try__item-field" type="text" name="name-field" id="name-field" placeholder="Имя" minlength="1" maxlength="20" required>
                 </li>
                 <li class="try__item">
                   <label class="visually-hidden" for="number-field">Ваш телефон:</label>
-                  <input class="try__item-field" type="tel" name="number-field" id="number-field" placeholder="Телефон" required>
+                  <input class="try__item-field" type="tel" name="number-field" id="number-field" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
                 </li>
               </ul>
 

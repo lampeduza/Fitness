@@ -254,7 +254,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 47px;
+  padding-bottom: 51px;
 }
 
 .header__top {
@@ -385,6 +385,12 @@ textarea {
 }
 
 .header__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: auto;
+  background-color: #2e35ac;
   margin-top: -6px;
 }
 
@@ -983,6 +989,7 @@ textarea {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   cursor: pointer;
+  background-color: #d3d3d3;
   position: relative;
   -webkit-transition: left .5s ease-in-out;
   -o-transition: left .5s ease-in-out;
@@ -1662,7 +1669,7 @@ textarea {
   line-height: 16px;
   width: 100%;
   padding: 8px 0;
-  color: #ffffff;
+  color: #cccccc;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 1px solid #74819c;
@@ -1686,6 +1693,35 @@ textarea {
 
 .try__item-field::placeholder {
   color: #ffffff;
+}
+
+.try__item-field:hover {
+  border-bottom-color: #ffffff;
+}
+
+.try__item-field:hover::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover::-moz-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover::-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover::placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:focus,
+.try__item-field:active {
+  border-bottom-color: #b3b3b3;
 }
 
 .try__send {
@@ -1809,7 +1845,7 @@ textarea {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 31px;
+  padding-bottom: 27px;
 }
 
 .footer__link:hover {
@@ -1933,6 +1969,16 @@ textarea {
   .header__item {
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .header__picture {
+    width: 100%;
+    background-color: #2e35ac;
+  }
+
+  .header__picture {
+    width: 324px;
+    height: 390px;
   }
 
   .header__image {
