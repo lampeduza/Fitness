@@ -1663,7 +1663,7 @@ textarea {
   margin-right: 0;
 }
 
-.try__item-field {
+.try__item input {
   font-family: inherit;
   font-size: 14px;
   line-height: 16px;
@@ -1675,52 +1675,52 @@ textarea {
   border-bottom: 1px solid #74819c;
 }
 
-.try__item-field::-webkit-input-placeholder {
+.try__item input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.try__item-field::-moz-placeholder {
+.try__item input::-moz-placeholder {
   color: #ffffff;
 }
 
-.try__item-field:-ms-input-placeholder {
+.try__item input:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.try__item-field::-ms-input-placeholder {
+.try__item input::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.try__item-field::placeholder {
+.try__item input::placeholder {
   color: #ffffff;
 }
 
-.try__item-field:hover {
+.try__item input:hover {
   border-bottom-color: #ffffff;
 }
 
-.try__item-field:hover::-webkit-input-placeholder {
+.try__item input:hover::-webkit-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover::-moz-placeholder {
+.try__item input:hover::-moz-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover:-ms-input-placeholder {
+.try__item input:hover:-ms-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover::-ms-input-placeholder {
+.try__item input:hover::-ms-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover::placeholder {
+.try__item input:hover::placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:focus,
-.try__item-field:active {
+.try__item input:focus,
+.try__item input:active {
   border-bottom-color: #b3b3b3;
 }
 
@@ -1924,7 +1924,7 @@ textarea {
   }
 
   .header__wrapper {
-    padding-bottom: 78px;
+    padding-bottom: 81px;
   }
 
   .header__top {
@@ -2489,7 +2489,6 @@ textarea {
 
   .try {
     width: 100%;
-    max-width: 900px;
   }
 
   .try::after {
@@ -2521,7 +2520,7 @@ textarea {
     width: calc(100% / 2 - 30px);
   }
 
-  .try__item-field {
+  .try__item input {
     padding: 7px 0;
   }
 
@@ -3164,7 +3163,7 @@ textarea {
     margin-bottom: 37px;
   }
 
-  .try__item-field {
+  .try__item input {
     padding: 4px 0;
   }
 

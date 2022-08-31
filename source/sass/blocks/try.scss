@@ -45,19 +45,19 @@
 	&:nth-child(2n) {
 		margin-right: 0;
 	}
-}
 
-.try__item-field {
-	@include inputStates;
-	font-family: inherit;
-	font-size: 14px;
-	line-height: 16px;
-	width: 100%;
-	padding: 8px 0;
-	color: darken($color-default-white, 20);
-	background-color: $color-transparent;
-	border: none;
-	border-bottom: 1px solid $color-light-slate-grey;
+	input {
+		@include inputStates;
+		font-family: inherit;
+		font-size: 14px;
+		line-height: 16px;
+		width: 100%;
+		padding: 8px 0;
+		color: darken($color-default-white, 20);
+		background-color: $color-transparent;
+		border: none;
+		border-bottom: 1px solid $color-light-slate-grey;
+	}
 }
 
 .try__send {
@@ -70,7 +70,6 @@
 @media (max-width: $desktop-width - 1px) {
 	.try {
 		width: 100%;
-		max-width: 900px;
 
 		&::after {
 			content: '';
@@ -98,10 +97,10 @@
 	.try__item {
 		margin-right: 60px;
 		width: calc(100% / 2 - 30px);
-	}
 
-	.try__item-field {
-		padding: 7px 0;
+		input {
+			padding: 7px 0;
+		}
 	}
 }
 
@@ -124,10 +123,10 @@
 		width: 100%;
 		margin: 0;
 		margin-bottom: 37px;
-	}
 
-	.try__item-field {
-		padding: 4px 0;
+		input {
+			padding: 4px 0;
+		}
 	}
 
 	.try__send {
