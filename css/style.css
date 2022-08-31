@@ -384,7 +384,7 @@ textarea {
   max-width: 700px;
 }
 
-.header__picture {
+.header__index-column picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +540,7 @@ textarea {
   position: relative;
 }
 
-.represent__visual figure {
+.represent__figure {
   margin: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1346,7 +1346,7 @@ textarea {
   display: flex;
 }
 
-.stock__image {
+.stock__picture img {
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1663,7 +1663,7 @@ textarea {
   margin-right: 0;
 }
 
-.try__item-field {
+.try__item input {
   font-family: inherit;
   font-size: 14px;
   line-height: 16px;
@@ -1675,52 +1675,52 @@ textarea {
   border-bottom: 1px solid #74819c;
 }
 
-.try__item-field::-webkit-input-placeholder {
+.try__item input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.try__item-field::-moz-placeholder {
+.try__item input::-moz-placeholder {
   color: #ffffff;
 }
 
-.try__item-field:-ms-input-placeholder {
+.try__item input:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.try__item-field::-ms-input-placeholder {
+.try__item input::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.try__item-field::placeholder {
+.try__item input::placeholder {
   color: #ffffff;
 }
 
-.try__item-field:hover {
+.try__item input:hover {
   border-bottom-color: #ffffff;
 }
 
-.try__item-field:hover::-webkit-input-placeholder {
+.try__item input:hover::-webkit-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover::-moz-placeholder {
+.try__item input:hover::-moz-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover:-ms-input-placeholder {
+.try__item input:hover:-ms-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover::-ms-input-placeholder {
+.try__item input:hover::-ms-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:hover::placeholder {
+.try__item input:hover::placeholder {
   color: #e6e6e6;
 }
 
-.try__item-field:focus,
-.try__item-field:active {
+.try__item input:focus,
+.try__item input:active {
   border-bottom-color: #b3b3b3;
 }
 
@@ -1924,7 +1924,7 @@ textarea {
   }
 
   .header__wrapper {
-    padding-bottom: 78px;
+    padding-bottom: 81px;
   }
 
   .header__top {
@@ -1971,25 +1971,21 @@ textarea {
     line-height: 21px;
   }
 
-  .header__picture {
-    width: 100%;
-    background-color: #2e35ac;
-  }
-
-  .header__picture {
-    width: 324px;
-    height: 390px;
-  }
-
-  .header__image {
-    width: 324px;
-    height: 390px;
-  }
-
   .header__index-column {
     width: auto;
     max-width: 100%;
     margin: 0 0 0 auto;
+  }
+
+  .header__index-column picture {
+    width: 324px;
+    height: 390px;
+    background-color: #2e35ac;
+  }
+
+  .header__index-column img {
+    width: 324px;
+    height: 390px;
   }
 
   .header__buy {
@@ -2051,7 +2047,7 @@ textarea {
     display: flex;
   }
 
-  .represent__image {
+  .represent__picture img {
     width: 100%;
     height: auto;
   }
@@ -2075,12 +2071,12 @@ textarea {
     background-size: 73px, 73px;
   }
 
-  .represent__action {
+  .represent__video-picture img {
     width: 266px;
     height: 167px;
   }
 
-  .represent__video-icon {
+  .represent__video-icon-container img {
     width: 73px;
     height: 73px;
   }
@@ -2279,7 +2275,7 @@ textarea {
     width: 100%;
   }
 
-  .coaches__image {
+  .coaches__picture img {
     width: 268px;
     height: 294px;
   }
@@ -2436,7 +2432,7 @@ textarea {
     width: calc(100% - 41.15%);
   }
 
-  .stock__image {
+  .stock__picture img {
     width: 100%;
     height: auto;
   }
@@ -2489,7 +2485,6 @@ textarea {
 
   .try {
     width: 100%;
-    max-width: 900px;
   }
 
   .try::after {
@@ -2521,7 +2516,7 @@ textarea {
     width: calc(100% / 2 - 30px);
   }
 
-  .try__item-field {
+  .try__item input {
     padding: 7px 0;
   }
 
@@ -2710,7 +2705,7 @@ textarea {
     transform: translateX(-50%);
   }
 
-  .represent__visual figure {
+  .represent__figure {
     margin-bottom: 40px;
   }
 
@@ -2729,7 +2724,7 @@ textarea {
     height: inherit;
   }
 
-  .represent__action {
+  .represent__video-picture img {
     width: 100%;
     height: auto;
   }
@@ -2852,7 +2847,7 @@ textarea {
     transform: translateX(-513px);
   }
 
-  .coaches__images {
+  .coaches__picture img {
     width: 226px;
     height: 274px;
   }
@@ -3113,7 +3108,7 @@ textarea {
     grid-row: 1 / 2;
   }
 
-  .reviews__image {
+  .reviews__picture img {
     width: 68px;
     height: 68px;
   }
@@ -3164,7 +3159,7 @@ textarea {
     margin-bottom: 37px;
   }
 
-  .try__item-field {
+  .try__item input {
     padding: 4px 0;
   }
 
@@ -3356,7 +3351,7 @@ textarea {
     -ms-grid-column-span: 2;
   }
 
-  .arrow__image {
+  .arrow img {
     width: 10px;
     height: 19px;
   }
