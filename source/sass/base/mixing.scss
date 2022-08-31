@@ -104,3 +104,22 @@
     border-color: lighten($color-resolution-blue, 15);
   }
 }
+
+@mixin inputStates {
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:hover {
+    border-bottom-color: $color-default-white;
+
+    &::placeholder {
+      color: darken($color-default-white, 10);
+    }
+  }
+
+  &:focus,
+  &:active {
+    border-bottom-color: darken($color-default-white, 30);
+  }
+}

@@ -1688,6 +1688,35 @@ textarea {
   color: #ffffff;
 }
 
+.try__item-field:hover {
+  border-bottom-color: #ffffff;
+}
+
+.try__item-field:hover::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover::-moz-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover::-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:hover::placeholder {
+  color: #e6e6e6;
+}
+
+.try__item-field:focus,
+.try__item-field:active {
+  border-bottom-color: #b3b3b3;
+}
+
 .try__send {
   border-width: 3px;
   font-size: 14px;
