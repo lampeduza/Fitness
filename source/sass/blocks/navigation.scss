@@ -1,5 +1,5 @@
 .navigation {
-	margin-left: 10px;
+	margin-left: -33px;
 }
 
 .navigation__list {
@@ -33,6 +33,10 @@
 }
 
 @media (max-width: $desktop-width - 1px) {
+	.navigation {
+		margin-left: -20px;
+	}
+	
 	.navigation__item {
 		margin-right: 30px;
 	}

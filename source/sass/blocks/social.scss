@@ -34,10 +34,14 @@
 	}
 
 	&--horizontal {
+		flex-wrap: wrap;
+		max-width: 97px;
+
 		.social__item {
 			margin-right: 11px;
+			margin-bottom: 11px;
 
-			&:last-child {
+			&:nth-child(3n) {
 				margin-right: 0;
 			}
 		}
