@@ -254,7 +254,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 47px;
+  padding-bottom: 51px;
 }
 
 .header__top {
@@ -385,6 +385,12 @@ textarea {
 }
 
 .header__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: auto;
+  background-color: #2e35ac;
   margin-top: -6px;
 }
 
@@ -1839,7 +1845,7 @@ textarea {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 31px;
+  padding-bottom: 27px;
 }
 
 .footer__link:hover {
@@ -1963,6 +1969,16 @@ textarea {
   .header__item {
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .header__picture {
+    width: 100%;
+    background-color: #2e35ac;
+  }
+
+  .header__picture {
+    width: 324px;
+    height: 390px;
   }
 
   .header__image {

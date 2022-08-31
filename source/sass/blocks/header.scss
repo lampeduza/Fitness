@@ -5,7 +5,7 @@
 .header__wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 47px;
+	padding-bottom: 51px;
 }
 
 .header__top {
@@ -107,6 +107,10 @@
 }
 
 .header__picture {
+	display: flex;
+	width: 500px;
+	height: auto;
+	background-color: $color-persian-blue;
 	margin-top: -6px;
 }
 
@@ -168,6 +172,17 @@
 		font-size: 14px;
 		line-height: 21px;
 	}
+
+	.header__picture {
+		width: 100%;
+		background-color: $color-persian-blue;
+	}
+
+	.header__picture {
+		width: 324px;
+		height: 390px;
+	}
+
 
 	.header__image {
 		width: 324px;
