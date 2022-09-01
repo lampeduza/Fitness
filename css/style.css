@@ -684,11 +684,6 @@ textarea {
   margin-right: 46px;
 }
 
-.subscriptions__slide--current .subscriptions__control {
-  border-bottom: 2px solid #d10a42;
-  color: #102654;
-}
-
 .subscriptions__slide:last-child {
   margin-right: 0;
 }
@@ -707,6 +702,11 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.subscriptions__control--current {
+  border-bottom: 2px solid #d10a42;
+  color: #102654;
 }
 
 .subscriptions__control:hover {
