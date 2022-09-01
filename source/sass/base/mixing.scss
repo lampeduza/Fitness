@@ -123,3 +123,32 @@
     border-bottom-color: darken($color-default-white, 30);
   }
 }
+
+@mixin contactsItem {
+  font-size: 14px;
+  line-height: 21px;
+  color: inherit;
+  margin: 0;
+  @include contactsStates;
+
+  @media (max-width: $desktop-width - 1px) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+@mixin contactsStates {
+  &:hover {
+    color: lighten($color-sapphire, 25);
+  }
+
+  &:focus,
+  &:active {
+    color: lighten($color-sapphire, 35);
+  }
+}

@@ -12,34 +12,34 @@
 	padding: 36px 45px 47px 45px;
 	background-color: $color-torch-red;
 	color: $color-default-white;
-}
 
-.offer__annual {
-	order: 1;
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 156%;
-	margin: 0;
-	margin-bottom: 15px;
+	h3 {
+		order: 2;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 140%;
+	}
+
+	p {
+		order: 1;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 156%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	a {
+		order: 3;
+		color: inherit;
+		margin-top: auto;
+	}
 }
 
 .offer__price {
 	display: block;
 	font-size: 70px;
 	margin-top: 7px;
-}
-
-.offer__title {
-	order: 2;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 140%;
-}
-
-.offer__more {
-	order: 3;
-	color: inherit;
-	margin-top: auto;
 }
 
 @media (max-width: $desktop-width - 1px) {
@@ -64,15 +64,15 @@
 		width: 100%;
 		align-items: center;
 		padding: 35px 50px 45px 50px;
-	}
 
-	.offer__title {
-		text-align: center;
-		margin-bottom: 32px;
-	}
+		h3 {
+			text-align: center;
+			margin-bottom: 32px;
+		}
 
-	.offer__annual {
-		text-align: center;
-		margin-bottom: 8px;
+	  p {
+			text-align: center;
+			margin-bottom: 8px;
+		}
 	}
 }

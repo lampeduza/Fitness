@@ -174,8 +174,6 @@ new ControlsClick({
 	clickTimeout: 250,
 });
 
-
-
 //// telephone input
 class TelephoneInputValidation {
 	constructor(telephoneField) {
@@ -210,4 +208,3 @@ class TelephoneInputValidation {
 new TelephoneInputValidation(
 	document.querySelector('#number-field')
 );
-

@@ -4,32 +4,43 @@
 	padding: 83px 78px;
 	width: 500px;
 	height: 500px;
+
+	p {
+		font-weight: 400;
+		font-size: 18px;
+		margin: 0;
+		margin-bottom: 50px;
+	}
+
+	a {
+		padding: 24px;
+	}
 }
 
 .request__main {
 	display: flex;
 	margin-bottom: 10px;
-}
 
-.request__title {
-	width: 201px;
-	font-family: 'Bebas Neue';
-	font-size: 90px;
-	line-height: 90px;
-	letter-spacing: 0.03em;
-	margin: 0;
-}
+	h2 {
+		width: 201px;
+		font-family: 'Bebas Neue';
+		font-size: 90px;
+		line-height: 90px;
+		letter-spacing: 0.03em;
+		margin: 0;
+	}
 
-.request__event {
-	margin: 0;
-	margin-left: 50px;
-	margin-top: -4px;
-}
+	dl {
+		margin: 0;
+		margin-left: 50px;
+		margin-top: -4px;
+	}
 
-.request__type {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 27px;
+  dt {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+	}
 }
 
 .request__time-point {
@@ -66,17 +77,6 @@
 	line-height: 60px;
 }
 
-.request__text {
-	font-weight: 400;
-	font-size: 18px;
-	margin: 0;
-	margin-bottom: 50px;
-}
-
-.request__fill {
-	padding: 24px;
-}
-
 @media (max-width: $desktop-width - 1px) {
 	.request {
 		display: flex;
@@ -85,27 +85,40 @@
 		width: 43%;
 		height: auto;
 		padding: 51px 45px;
+
+		p {
+			font-size: 12px;
+			line-height: 18px;
+			margin-bottom: 28px;
+		}
+
+		a {
+			font-size: 10px;
+			line-height: 12px;
+			padding: 12px;
+			border-width: 2px;
+		}
 	}
 
 	.request__main {
 		margin: 0;
 		display: flex;
 		align-items: flex-start;
-	}
 
-	.request__title {
-		font-size: 52px;
-		line-height: 52px;
-		width: auto;
-	}
+		h2 {
+			font-size: 52px;
+			line-height: 52px;
+			width: auto;
+		}
 
-	.request__event {
-		margin-left: 29px;
-	}
+		dl {
+			margin-left: 29px;
+		}
 
-	.request__type {
-		font-size: 12px;
-		line-height: 18px;
+		dt {
+			font-size: 12px;
+			line-height: 18px;
+		}
 	}
 
 	.request__time-point {
@@ -134,19 +147,6 @@
 		line-height: 36px;
 		display: block;
     margin-top: -5px;
-	}
-
-	.request__text {
-		font-size: 12px;
-		line-height: 18px;
-		margin-bottom: 28px;
-	}
-
-	.request__fill {
-		font-size: 10px;
-		line-height: 12px;
-		padding: 12px;
-		border-width: 2px;
 	}
 }
 
