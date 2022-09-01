@@ -1525,6 +1525,7 @@ textarea {
   width: 100%;
   -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  position: relative;
 }
 
 .reviews__picture {
@@ -2265,6 +2266,7 @@ textarea {
 
   .coaches__slide {
     width: 268px;
+    height: 294px;
     margin-right: 30px;
     -webkit-transform: translateX(-596px);
     -ms-transform: translateX(-596px);
