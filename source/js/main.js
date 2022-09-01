@@ -222,3 +222,16 @@ if (window.localStorage) {
     };
   }
 }
+
+// tabs
+const controls = document.querySelectorAll('.subscriptions__control');
+const contents = document.querySelectorAll('.subscriptions__card');
+
+controls.forEach((control, index) => {
+	control.addEventListener('click', () => {
+		contents.forEach(content => content.classList.remove('subscriptions__card--visible'));
+		controls.forEach(control => control.classList.remove('subscriptions__control--current'));
+		contents[index].classList.add('subscriptions__card--visible');
+		controls[index].classList.add('subscriptions__control--current');
+	});
+});

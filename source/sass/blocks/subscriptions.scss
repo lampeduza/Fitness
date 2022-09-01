@@ -63,13 +63,6 @@
 .subscriptions__slide {
 	margin-right: 46px;
 
-	&--current {
-		.subscriptions__control {
-			border-bottom: 2px solid $color-crimson;
-			color: $color-sapphire;
-		}
-	}
-
 	&:last-child {
 		margin-right: 0;
 	}
@@ -86,6 +79,11 @@
 	padding: 10px 0;
 	cursor: pointer;
 	user-select: none;
+
+	&--current {
+		border-bottom: 2px solid $color-crimson;
+		color: $color-sapphire;
+	}
 
 	&:hover {
 		border-bottom: 2px solid $color-crimson;
