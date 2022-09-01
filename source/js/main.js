@@ -40,9 +40,9 @@ class ControlsClick {
 		this._slidesVisibleCount = slidesVisibleCount;
 		this._slidesCount = this._slideList.length;
 		// this._slidesOffset = 0;
-		this._transition = Math.round(
-			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
-		);
+		// this._transition = Math.round(
+		// 	this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		// );
 		this._leftControl = controls[0];
 		this._rightControl = controls[1];
 		this._firstSlide = slideList[0];
@@ -94,6 +94,10 @@ class ControlsClick {
 			this._debouncedRightHandler,
 		);
 
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		);
+
 		for (const slide of this._slideList) {
 			slide.style.transition = 'all 0.5s ease-in-out';
 			slide.style.left = '0px';
@@ -124,6 +128,10 @@ class ControlsClick {
 		this._leftControl.removeEventListener(
 			'click',
 			this._debouncedLeftHandler,
+		);
+
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
 		);
 
 		this._firstSlide = this._slideListContainer.insertBefore(
