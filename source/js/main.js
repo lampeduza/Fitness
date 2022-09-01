@@ -208,3 +208,17 @@ class TelephoneInputValidation {
 new TelephoneInputValidation(
 	document.querySelector('#number-field')
 );
+
+// local storage
+if (window.localStorage) {
+  const fields = document.querySelectorAll('input');
+
+  for (let field of fields) {
+    const name = field.getAttribute('name');
+    field.value = localStorage.getItem(name) || field.value;
+
+    field.onkeyup = function() {
+      localStorage.setItem(name, field.value);
+    };
+  }
+}
