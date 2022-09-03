@@ -201,9 +201,11 @@
 	}
 }
 
-@media (max-width: 559px) {
-	h1 {
-		width: 213px;
+@media (max-width: 540px) {
+	.header__content {
+		h1 {
+			width: 213px;
+		}
 	}
 }
 
