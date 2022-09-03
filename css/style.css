@@ -3382,8 +3382,8 @@ textarea {
   }
 }
 
-@media (max-width: 559px) {
-  h1 {
+@media (max-width: 540px) {
+  .header__content h1 {
     width: 213px;
   }
 }
