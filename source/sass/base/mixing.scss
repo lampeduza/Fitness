@@ -124,12 +124,29 @@
   }
 }
 
-@mixin contactsItem {
+@mixin contactsItemLink {
   font-size: 14px;
   line-height: 21px;
   color: inherit;
   margin: 0;
   @include contactsStates;
+
+  @media (max-width: $desktop-width - 1px) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+@mixin contactsItemText {
+  font-size: 14px;
+  line-height: 21px;
+  color: inherit;
+  margin: 0;
 
   @media (max-width: $desktop-width - 1px) {
     font-size: 18px;

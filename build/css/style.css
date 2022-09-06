@@ -1794,15 +1794,6 @@ textarea {
   margin: 0;
 }
 
-.contacts__list p:hover {
-  color: #2456bf;
-}
-
-.contacts__list p:focus,
-.contacts__list p:active {
-  color: #3d6fda;
-}
-
 .contacts__list a {
   font-size: 14px;
   line-height: 21px;

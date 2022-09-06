@@ -52,8 +52,7 @@
 	}
 
 	p {
-		
-		@include contactsItem;
+		@include contactsItemText;
 	}
 
 	a {
@@ -62,7 +61,7 @@
 		color: inherit;
 		margin: 0;
 		user-select: none;
-		@include contactsItem;
+		@include contactsItemLink;
 	}
 }
 
