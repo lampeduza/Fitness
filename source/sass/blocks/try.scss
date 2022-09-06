@@ -19,31 +19,31 @@
 
 .try__wrapper {
 	padding: 61px 170px 69px 0;
-}
 
-.try__title {
-	font-family: 'Bebas Neue';
-	font-size: 49px;
-	line-height: 64px;
-	letter-spacing: 0.03em;
-	color: $color-default-white;
-	margin: 0;
-	margin-bottom: 28px;
-}
+	h2 {
+		font-family: 'Bebas Neue';
+		font-size: 49px;
+		line-height: 64px;
+		letter-spacing: 0.03em;
+		color: $color-default-white;
+		margin: 0;
+		margin-bottom: 28px;
+	}
 
-.try__list {
-	@include reset-list;
-	display: flex;
-	flex-wrap: wrap;
-}
+	ul {
+		@include reset-list;
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-.try__item {
-	width: calc(100% / 2 - 15px);
-	margin-right: 30px;
-	margin-bottom: 30px;
+	li {
+		width: calc(100% / 2 - 15px);
+		margin-right: 30px;
+		margin-bottom: 30px;
 
-	&:nth-child(2n) {
-		margin-right: 0;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
 	}
 
 	input {
@@ -86,17 +86,17 @@
 
 	.try__wrapper {
 		padding: 70px 118px 70px 88px;
-	}
 
-	.try__title {
-		font-size: 42px;
-		line-height: 42px;
-		margin-bottom: 31px;
-	}
+		h2 {
+			font-size: 42px;
+			line-height: 42px;
+			margin-bottom: 31px;
+		}
 
-	.try__item {
-		margin-right: 60px;
-		width: calc(100% / 2 - 30px);
+		li {
+			margin-right: 60px;
+			width: calc(100% / 2 - 30px);
+		}
 
 		input {
 			padding: 7px 0;
@@ -107,22 +107,22 @@
 @media (max-width: $tablet-width - 1px) {
 	.try__wrapper {
 		padding: 70px 0 71px 0;
-	}
 
-	.try__title {
-		font-size: 32px;
-		line-height: 32px;
-		margin-bottom: 37px;
-	}
+		h2 {
+			font-size: 32px;
+			line-height: 32px;
+			margin-bottom: 37px;
+		}
 
-	.try__list {
-		flex-direction: column;
-	}
+		ul {
+			flex-direction: column;
+		}
 
-	.try__item {
-		width: 100%;
-		margin: 0;
-		margin-bottom: 37px;
+		li {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 37px;
+		}
 
 		input {
 			padding: 4px 0;

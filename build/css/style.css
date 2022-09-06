@@ -1633,7 +1633,7 @@ textarea {
   padding: 61px 170px 69px 0;
 }
 
-.try__title {
+.try__wrapper h2 {
   font-family: 'Bebas Neue';
   font-size: 49px;
   line-height: 64px;
@@ -1643,7 +1643,7 @@ textarea {
   margin-bottom: 28px;
 }
 
-.try__list {
+.try__wrapper ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1654,17 +1654,17 @@ textarea {
   flex-wrap: wrap;
 }
 
-.try__item {
+.try__wrapper li {
   width: calc(100% / 2 - 15px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.try__item:nth-child(2n) {
+.try__wrapper li:nth-child(2n) {
   margin-right: 0;
 }
 
-.try__item input {
+.try__wrapper input {
   font-family: inherit;
   font-size: 14px;
   line-height: 16px;
@@ -1676,52 +1676,52 @@ textarea {
   border-bottom: 1px solid #74819c;
 }
 
-.try__item input::-webkit-input-placeholder {
+.try__wrapper input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.try__item input::-moz-placeholder {
+.try__wrapper input::-moz-placeholder {
   color: #ffffff;
 }
 
-.try__item input:-ms-input-placeholder {
+.try__wrapper input:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.try__item input::-ms-input-placeholder {
+.try__wrapper input::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.try__item input::placeholder {
+.try__wrapper input::placeholder {
   color: #ffffff;
 }
 
-.try__item input:hover {
+.try__wrapper input:hover {
   border-bottom-color: #ffffff;
 }
 
-.try__item input:hover::-webkit-input-placeholder {
+.try__wrapper input:hover::-webkit-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item input:hover::-moz-placeholder {
+.try__wrapper input:hover::-moz-placeholder {
   color: #e6e6e6;
 }
 
-.try__item input:hover:-ms-input-placeholder {
+.try__wrapper input:hover:-ms-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item input:hover::-ms-input-placeholder {
+.try__wrapper input:hover::-ms-input-placeholder {
   color: #e6e6e6;
 }
 
-.try__item input:hover::placeholder {
+.try__wrapper input:hover::placeholder {
   color: #e6e6e6;
 }
 
-.try__item input:focus,
-.try__item input:active {
+.try__wrapper input:focus,
+.try__wrapper input:active {
   border-bottom-color: #b3b3b3;
 }
 
@@ -2520,18 +2520,18 @@ textarea {
     padding: 70px 118px 70px 88px;
   }
 
-  .try__title {
+  .try__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 31px;
   }
 
-  .try__item {
+  .try__wrapper li {
     margin-right: 60px;
     width: calc(100% / 2 - 30px);
   }
 
-  .try__item input {
+  .try__wrapper input {
     padding: 7px 0;
   }
 
@@ -3160,26 +3160,26 @@ textarea {
     padding: 70px 0 71px 0;
   }
 
-  .try__title {
+  .try__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 37px;
   }
 
-  .try__list {
+  .try__wrapper ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .try__item {
+  .try__wrapper li {
     width: 100%;
     margin: 0;
     margin-bottom: 37px;
   }
 
-  .try__item input {
+  .try__wrapper input {
     padding: 4px 0;
   }
 
