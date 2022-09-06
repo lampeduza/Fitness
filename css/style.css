@@ -1984,6 +1984,7 @@ textarea {
   .header__content a {
     min-width: 183px;
     display: inline-block;
+    vertical-align: middle;
     padding: 18px;
   }
 
