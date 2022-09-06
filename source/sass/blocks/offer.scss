@@ -29,17 +29,17 @@
 		margin-bottom: 15px;
 	}
 
+	span {
+		display: block;
+		font-size: 70px;
+		margin-top: 7px;
+	}
+
 	a {
 		order: 3;
 		color: inherit;
 		margin-top: auto;
 	}
-}
-
-.offer__price {
-	display: block;
-	font-size: 70px;
-	margin-top: 7px;
 }
 
 @media (max-width: $desktop-width - 1px) {

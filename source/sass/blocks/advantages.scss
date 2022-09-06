@@ -4,17 +4,17 @@
 
 .advantages__wrapper {
 	padding: 120px 163px 111px 163px;
-}
 
-.advantages__title {
-	font-family: 'Bebas Neue';
-	font-size: 49px;
-	line-height: 49px;
-	letter-spacing: 0.03em;
-	color: $color-sapphire;
-	text-align: center;
-	margin: 0;
-	margin-bottom: 58px;
+	h2 {
+		font-family: 'Bebas Neue';
+		font-size: 49px;
+		line-height: 49px;
+		letter-spacing: 0.03em;
+		color: $color-sapphire;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 58px;
+	}
 }
 
 .advantages__list {
@@ -149,12 +149,12 @@
 	.advantages__wrapper {
 		padding-top: 100px;
 		padding-bottom: 90px;
-	}
 
-	.advantages__title {
-		font-size: 42px;
-		line-height: 42px;
-		margin-bottom: 40px;
+		h2 {
+			font-size: 42px;
+			line-height: 42px;
+			margin-bottom: 40px;
+		}
 	}
 
 	.advantages__list {
@@ -223,12 +223,12 @@
 	.advantages__wrapper {
 		padding-top: 70px;
 		padding-bottom: 63px;
-	}
 
-	.advantages__title {
-		font-size: 32px;
-		line-height: 32px;
-		margin-bottom: 43px;
+		h2 {
+			font-size: 32px;
+			line-height: 32px;
+			margin-bottom: 43px;
+		}
 	}
 
 	.advantages__list {

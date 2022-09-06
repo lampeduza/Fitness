@@ -643,7 +643,7 @@ textarea {
   flex-direction: column;
 }
 
-.subscriptions__title {
+.subscriptions__wrapper h2 {
   font-family: 'Bebas Neue';
   font-size: 49px;
   line-height: 49px;
@@ -962,7 +962,7 @@ textarea {
   position: relative;
 }
 
-.coaches__title {
+.coaches__wrapper h2 {
   font-family: 'Bebas Neue';
   font-size: 49px;
   line-height: 49px;
@@ -1150,7 +1150,7 @@ textarea {
   padding: 120px 163px 111px 163px;
 }
 
-.advantages__title {
+.advantages__wrapper h2 {
   font-family: 'Bebas Neue';
   font-size: 49px;
   line-height: 49px;
@@ -1326,7 +1326,7 @@ textarea {
   align-items: flex-start;
 }
 
-.stock__title {
+.stock__wrapper h2 {
   width: 100%;
   font-family: 'Bebas Neue';
   font-size: 49px;
@@ -1399,10 +1399,6 @@ textarea {
   margin-bottom: 5px;
 }
 
-.stock__list p:last-of-type {
-  margin-bottom: 20px;
-}
-
 .stock__list a {
   margin-top: auto;
 }
@@ -1450,18 +1446,18 @@ textarea {
   margin-bottom: 15px;
 }
 
+.offer__content span {
+  display: block;
+  font-size: 70px;
+  margin-top: 7px;
+}
+
 .offer__content a {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
   color: inherit;
   margin-top: auto;
-}
-
-.offer__price {
-  display: block;
-  font-size: 70px;
-  margin-top: 7px;
 }
 
 .reviews__wrapper {
@@ -1478,7 +1474,7 @@ textarea {
   padding-bottom: 120px;
 }
 
-.reviews__title {
+.reviews__wrapper h2 {
   font-family: 'Bebas Neue';
   font-size: 49px;
   line-height: 49px;
@@ -1725,7 +1721,7 @@ textarea {
   border-bottom-color: #b3b3b3;
 }
 
-.try__send {
+.try__wrapper button {
   border-width: 3px;
   font-size: 14px;
   line-height: 16px;
@@ -1741,7 +1737,7 @@ textarea {
   padding: 61px 56px 64px 120px;
 }
 
-.contacts__title {
+.contacts__wrapper h2 {
   font-family: 'Bebas Neue';
   font-size: 49px;
   line-height: 64px;
@@ -2109,7 +2105,7 @@ textarea {
     padding-bottom: 62px;
   }
 
-  .subscriptions__title {
+  .subscriptions__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 18px;
@@ -2263,18 +2259,18 @@ textarea {
     padding-bottom: 100px;
   }
 
+  .coaches__wrapper h2 {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   .coaches__cards {
     position: relative;
     width: 100%;
     padding: 0 56px;
     margin: 0 auto;
-  }
-
-  .coaches__title {
-    font-size: 42px;
-    line-height: 42px;
-    text-align: center;
-    margin-bottom: 40px;
   }
 
   .coaches__slide {
@@ -2335,7 +2331,7 @@ textarea {
     padding-bottom: 90px;
   }
 
-  .advantages__title {
+  .advantages__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 40px;
@@ -2437,7 +2433,7 @@ textarea {
     padding-top: 100px;
   }
 
-  .stock__title {
+  .stock__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 40px;
@@ -2492,7 +2488,7 @@ textarea {
     padding-bottom: 100px;
   }
 
-  .reviews__title {
+  .reviews__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 40px;
@@ -2553,7 +2549,7 @@ textarea {
     padding: 70px 118px 60px 88px;
   }
 
-  .contacts__title {
+  .contacts__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 31px;
@@ -2758,7 +2754,7 @@ textarea {
     padding-bottom: 36px;
   }
 
-  .subscriptions__title {
+  .subscriptions__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 10px;
@@ -2847,7 +2843,7 @@ textarea {
     padding-bottom: 70px;
   }
 
-  .coaches__title {
+  .coaches__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 42px;
@@ -2898,7 +2894,7 @@ textarea {
     padding-bottom: 63px;
   }
 
-  .advantages__title {
+  .advantages__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 43px;
@@ -3023,7 +3019,7 @@ textarea {
     padding-bottom: 29px;
   }
 
-  .stock__title {
+  .stock__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 42px;
@@ -3060,7 +3056,7 @@ textarea {
   }
 
   .stock__list a {
-    margin: 7px auto 0;
+    margin: 22px auto 0;
   }
 
   .offer {
@@ -3092,12 +3088,9 @@ textarea {
     padding-bottom: 69px;
   }
 
-  .reviews__title {
+  .reviews__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
-  }
-
-  .reviews__title {
     margin-bottom: 43px;
   }
 
@@ -3183,7 +3176,7 @@ textarea {
     padding: 4px 0;
   }
 
-  .try__send {
+  .try__wrapper button {
     border-width: 3px;
   }
 
@@ -3201,7 +3194,7 @@ textarea {
     padding: 70px 0 60px 0;
   }
 
-  .contacts__title {
+  .contacts__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 33px;

@@ -58,13 +58,13 @@
 		border: none;
 		border-bottom: 1px solid $color-light-slate-grey;
 	}
-}
 
-.try__send {
-	border-width: 3px;
-	font-size: 14px;
-	line-height: 16px;
-	padding: 15px;
+	button {
+		border-width: 3px;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 15px;
+	}
 }
 
 @media (max-width: $desktop-width - 1px) {
@@ -127,9 +127,9 @@
 		input {
 			padding: 4px 0;
 		}
-	}
 
-	.try__send {
-		border-width: 3px;
+		button {
+			border-width: 3px;
+		}
 	}
 }
