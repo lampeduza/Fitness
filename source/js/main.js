@@ -30,19 +30,13 @@ class ControlsClick {
 	constructor({
 		slideList,
 		slideListContainer,
-		slidesVisibleCount = 1, 
 		controls, 
 		clickTimeout = 250,
 	} = {}) {
 		this._slideList = slideList;
 		this._slideListContainer = slideListContainer;
 		this._clickTimeout = clickTimeout;
-		this._slidesVisibleCount = slidesVisibleCount;
 		this._slidesCount = this._slideList.length;
-		// this._slidesOffset = 0;
-		// this._transition = Math.round(
-		// 	this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
-		// );
 		this._leftControl = controls[0];
 		this._rightControl = controls[1];
 		this._firstSlide = slideList[0];
@@ -89,13 +83,14 @@ class ControlsClick {
 	};
 
 	_onRightClick = () => {
+		if (this._areAllSlidesVisible()) {
+			console.log(`don't move`);
+			return;
+		}
+
 		this._rightControl.removeEventListener(
 			'click',
 			this._debouncedRightHandler,
-		);
-
-		this._transition = Math.round(
-			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
 		);
 
 		for (const slide of this._slideList) {
@@ -125,13 +120,14 @@ class ControlsClick {
 	};
 
 	_onLeftClick = () => {
+		if (this._areAllSlidesVisible()) {
+			console.log(`don't move`);
+			return;
+		}
+
 		this._leftControl.removeEventListener(
 			'click',
 			this._debouncedLeftHandler,
-		);
-
-		this._transition = Math.round(
-			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
 		);
 
 		this._firstSlide = this._slideListContainer.insertBefore(
@@ -156,20 +152,30 @@ class ControlsClick {
 			}, 50);
 		}
 	};
+
+	_areAllSlidesVisible = () => {
+		this._slidesCount = this._slideList.length;
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		);
+		const slideListContainerWidth =  Math.round(
+			this._slideListContainer.getBoundingClientRect().right - this._slideListContainer.getBoundingClientRect().left
+		);
+
+		return this._slidesCount * this._transition <= slideListContainerWidth;
+	};
 };
 
 new ControlsClick({
 	slideList: coaches, 
 	slideListContainer: coachesList,
-	slidesVisibleCount: 4, 
 	controls: coachesControls, 
 	clickTimeout: 250,
 });
 
 new ControlsClick({
 	slideList: reviews,
-	slideListContainer: reviewsContainer, 
-	slidesVisibleCount: 1, 
+	slideListContainer: reviewsContainer,  
 	controls: reviewsControls, 
 	clickTimeout: 250,
 });
