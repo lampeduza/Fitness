@@ -805,6 +805,10 @@ textarea {
   margin-bottom: 6px;
 }
 
+.subscriptions__item em {
+  font-style: normal;
+}
+
 .subscriptions__item-additional-information {
   color: #495a7d;
   font-size: 16px;
