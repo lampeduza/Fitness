@@ -1270,6 +1270,7 @@ textarea {
   line-height: 39px;
   color: #ffffff;
   margin-bottom: 33px;
+  display: block;
 }
 
 .advantages__item--main-thing p {
@@ -2981,6 +2982,11 @@ textarea {
     margin: 0;
     margin-bottom: 9px;
     text-align: center;
+  }
+
+  .advantages__value,
+  .advantages__type {
+    display: block;
   }
 
   .advantages__data {
