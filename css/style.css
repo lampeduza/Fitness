@@ -796,7 +796,7 @@ textarea {
   margin-right: 0;
 }
 
-.subscriptions__item-title {
+.subscriptions__item h3 {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
@@ -1268,7 +1268,7 @@ textarea {
   margin-bottom: 33px;
 }
 
-.advantages__item--main-thing .advantages__data-text {
+.advantages__item--main-thing p {
   color: #ffffff;
 }
 
@@ -2131,7 +2131,7 @@ textarea {
     padding: 55px 110px 60px;
   }
 
-  .subscriptions__item-title {
+  .subscriptions__item h3 {
     line-height: 29px;
     margin-bottom: 10px;
   }
@@ -2787,7 +2787,7 @@ textarea {
     margin-bottom: 37px;
   }
 
-  .subscriptions__item-title {
+  .subscriptions__item h3 {
     font-size: 22px;
     line-height: 110.16%;
   }
