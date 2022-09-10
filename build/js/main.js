@@ -241,3 +241,50 @@ controls.forEach((control, index) => {
 		controls[index].classList.add('subscriptions__control--current');
 	});
 });
+
+// video
+const generateURL = (id) => {
+    let query = '?rel=0&showinfo=0&autoplay=1';
+
+    return 'https://www.youtube.com/embed/' + id + query;
+};
+
+const createIframe = (id) => {
+    const iframe = document.createElement('iframe');
+
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('allow', 'autoplay');
+    iframe.setAttribute('src', generateURL(id));
+    // iframe.classList.add('represent__action');
+
+    return iframe;
+};
+
+const parseMediaURL = (href) => {
+    const regexp = /(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/user\/\S+|\/ytscreeningroom\?v=))([\w\-]{10,12})\b/;
+    const match = href.match(regexp);
+
+    return match[1];
+};
+
+const setupVideo = (video) => {
+    const link = video.querySelector('.represent__video-link');
+		const href = link.getAttribute('href');
+		const button = video.querySelector('.represent__video-play');
+		const id = parseMediaURL(href);
+
+    video.addEventListener('click', () => {
+        const iframe = createIframe(id);
+
+        link.remove();
+        button.remove();
+        video.append(iframe);
+    });
+
+    link.removeAttribute('href');
+    video.classList.add('represent__video');
+};
+
+setupVideo(
+	document.querySelector('.represent__video')
+);
