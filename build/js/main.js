@@ -26,7 +26,7 @@ const coachesControlsList = coachesSection.querySelector('.coaches__controls');
 const coachesControls = coachesControlsList.children;
 const coaches = coachesList.children;
 
-class ControlsClick {
+class Slider {
 	constructor({
 		slideList,
 		slideListContainer,
@@ -166,14 +166,141 @@ class ControlsClick {
 	};
 };
 
-new ControlsClick({
+class Carousel {
+	constructor({
+		slideList,
+		slideListContainer,
+		slidesVisibleCount = 1, 
+		controls, 
+		clickTimeout = 250,
+	} = {}) {
+		this._slideList = slideList;
+		this._slideListContainer = slideListContainer;
+		this._clickTimeout = clickTimeout;
+		this._slidesVisibleCount = slidesVisibleCount;
+		this._slidesCount = this._slideList.length;
+		this._slidesOffset = 0;
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		);
+		this._leftControl = controls[0];
+		this._rightControl = controls[1];
+		this._firstSlide = slideList[0];
+		this._rightButton = this._rightControl.querySelector('button');
+		this._leftButton = this._leftControl.querySelector('button');
+
+		this._step = 0;
+
+		this._leftControl.addEventListener(
+			'click',
+			this._debounceLeft(this._onLeftClick, this._clickTimeout),
+		);
+
+		this._rightControl.addEventListener(
+			'click',
+			this._debounceRight(this._onRightClick, this._clickTimeout),
+		);
+
+		this._checkControlsAccessibility();
+	}
+
+	_debounceRight = (cb, timeout) => {
+  	let timeoutId;
+
+  	this._debouncedRightHandler = () => {
+  		if (timeoutId) {
+  			clearTimeout(timeoutId);
+  	  	timeoutId = setTimeout(cb, timeout);
+  	  	return;
+  		}
+
+  		cb();
+  		timeoutId = setTimeout(() => {}, 0);
+  	};
+
+  	return this._debouncedRightHandler;
+	};
+
+	_debounceLeft = (cb, timeout) => {
+  	let timeoutId;
+
+  	 this._debouncedLeftHandler = () => {
+  		clearTimeout(timeoutId);
+  	  timeoutId = setTimeout(cb, timeout);
+  	};
+
+  	return this._debouncedLeftHandler;
+	};
+
+	_onRightClick = () => {
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		);
+		this._slidesCount = this._slideList.length;
+
+		if (this._slidesOffset < this._transition * (this._slidesCount - this._slidesVisibleCount)) {
+			this._slidesOffset += this._transition;
+
+			for (const slide of this._slideList) {
+				slide.style.transition = 'all 0.5s ease-in-out';
+				slide.style.left = `-${this._slidesOffset - this._transition}px`;
+				setTimeout(() => {slide.style.left = `-${this._slidesOffset}px`;}, 50);
+			}
+		}
+
+		this._checkControlsAccessibility();
+	};
+
+	_onLeftClick = () => {
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		);
+		this._slidesCount = this._slideList.length;
+
+		if (this._slidesOffset > 0) {
+			this._slidesOffset -= this._transition;
+
+			for (const slide of this._slideList) {
+				slide.style.transition = 'all 0.5s ease-in-out';
+				slide.style.left = `-${this._slidesOffset + this._transition}px`;
+				setTimeout(() => {slide.style.left = `-${this._slidesOffset}px`;}, 50);
+			}
+		}
+
+		this._checkControlsAccessibility();
+	};
+
+	_checkControlsAccessibility = () => {
+		if (this._slidesOffset === 0) {
+			this._leftButton.style.opacity = '0.5';
+			this._leftButton.style.cursor = 'default';
+			this._leftButton.disabled = true;
+		} else {
+			this._leftButton.style.opacity = '1';
+			this._leftButton.style.cursor = 'pointer'
+			this._leftButton.disabled = false;
+		}
+
+		if (this._slidesOffset >= this._transition * (this._slidesCount - this._slidesVisibleCount)) {
+			this._rightButton.style.opacity = '0.5';
+			this._rightButton.style.cursor = 'default';
+			this._rightButton.disabled = true;
+		} else {
+			this._rightButton.style.opacity = '1';
+			this._rightButton.style.cursor = 'pointer';
+			this._rightButton.disabled = false;
+		}
+	};
+};
+
+new Slider({
 	slideList: coaches, 
 	slideListContainer: coachesList,
 	controls: coachesControls, 
 	clickTimeout: 250,
 });
 
-new ControlsClick({
+new Carousel({
 	slideList: reviews,
 	slideListContainer: reviewsContainer,  
 	controls: reviewsControls, 
