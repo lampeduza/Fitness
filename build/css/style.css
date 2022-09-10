@@ -1840,6 +1840,7 @@ textarea {
 
 .footer {
   background-color: #030a1a;
+  margin-top: auto;
 }
 
 .footer__wrapper {
