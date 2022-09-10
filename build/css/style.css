@@ -551,7 +551,7 @@ textarea {
 .represent__video {
   position: absolute;
   left: -63px;
-  bottom: -111px;
+  top: 288px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2067,7 +2067,7 @@ textarea {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -83px;
+    top: 263px;
   }
 
   .represent__video-link::before {
@@ -2738,7 +2738,7 @@ textarea {
     -ms-transform: none;
     transform: none;
     left: auto;
-    bottom: auto;
+    top: auto;
   }
 
   .represent__video-link::before {
