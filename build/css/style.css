@@ -359,7 +359,7 @@ textarea {
   min-width: 113px;
   position: absolute;
   right: 263px;
-  bottom: 192px;
+  top: 205px;
 }
 
 .header__content li {
@@ -1971,7 +1971,7 @@ textarea {
 
   .header__content ul {
     right: 211px;
-    bottom: 146px;
+    top: 145px;
   }
 
   .header__content li {
@@ -2677,7 +2677,7 @@ textarea {
   .header__content ul {
     left: 0;
     right: auto;
-    bottom: 118px;
+    top: 123px;
   }
 
   .header__content a {
