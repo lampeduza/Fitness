@@ -969,6 +969,10 @@ iframe {
   margin-bottom: 50px;
 }
 
+.coaches__cards {
+  position: relative;
+}
+
 .coaches__slider {
   margin: 0;
   padding: 0;
@@ -980,9 +984,9 @@ iframe {
 }
 
 .coaches__slide {
-  width: 260px;
-  height: 294px;
-  margin-right: 40px;
+  width: 22.414%;
+  height: auto;
+  margin-right: 3.448%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   cursor: pointer;
@@ -1105,19 +1109,31 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .coaches__control {
   position: absolute;
-  bottom: 250px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .coaches__control--previous {
-  left: 47px;
+  left: -57px;
 }
 
 .coaches__control--next {
-  right: 47px;
+  right: -57px;
 }
 
 .coaches__button {
@@ -2257,6 +2273,7 @@ iframe {
   .coaches__wrapper {
     position: static;
     padding-bottom: 100px;
+    overflow: hidden;
   }
 
   .coaches__wrapper h2 {
@@ -2274,33 +2291,22 @@ iframe {
   }
 
   .coaches__slide {
-    width: 268px;
-    height: 294px;
-    margin-right: 30px;
-    -webkit-transform: translateX(-596px);
-    -ms-transform: translateX(-596px);
-    transform: translateX(-596px);
+    width: 47.35%;
+    height: auto;
+    margin-right: 5.3%;
   }
 
   .coaches__slide img {
-    width: 268px;
-    height: 294px;
+    width: 100%;
+    height: auto;
   }
 
   .coaches__content {
     width: 100%;
   }
 
-  .coaches__control {
-    top: 132px;
-  }
-
-  .coaches__control--previous {
-    left: 0;
-  }
-
   .coaches__control--next {
-    right: 0;
+    right: 55px;
   }
 
   .coaches__content {
@@ -2869,16 +2875,13 @@ iframe {
   }
 
   .coaches__slide {
-    width: 226px;
-    height: 274px;
-    -webkit-transform: translateX(-513px);
-    -ms-transform: translateX(-513px);
-    transform: translateX(-513px);
+    width: 100%;
+    height: auto;
   }
 
   .coaches__slide img {
-    width: 226px;
-    height: 274px;
+    width: 100%;
+    height: auto;
   }
 
   .coaches__content {
@@ -2898,8 +2901,12 @@ iframe {
     top: 8px;
   }
 
-  .coaches__control {
-    top: 128px;
+  .coaches__control--previous {
+    left: -34px;
+  }
+
+  .coaches__control--next {
+    right: 33px;
   }
 
   .advantages__wrapper {
