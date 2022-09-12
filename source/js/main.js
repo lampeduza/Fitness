@@ -26,7 +26,7 @@ const coachesControlsList = coachesSection.querySelector('.coaches__controls');
 const coachesControls = coachesControlsList.children;
 const coaches = coachesList.children;
 
-class Slider {
+class AbstractSlider {
 	constructor({
 		slideList,
 		slideListContainer,
@@ -37,21 +37,26 @@ class Slider {
 		this._slideListContainer = slideListContainer;
 		this._clickTimeout = clickTimeout;
 		this._slidesCount = this._slideList.length;
+		this._transition = Math.round(
+			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
+		);
 		this._leftControl = controls[0];
 		this._rightControl = controls[1];
 		this._firstSlide = slideList[0];
+		this._rightButton = this._rightControl.querySelector('button');
+		this._leftButton = this._leftControl.querySelector('button');
 
-		this._step = 0;
+		setTimeout(() => {
+			this._leftControl.addEventListener(
+				'click',
+				this._debounceLeft(this._onLeftClick, this._clickTimeout),
+			);
 
-		this._leftControl.addEventListener(
-			'click',
-			this._debounceLeft(this._onLeftClick, this._clickTimeout),
-		);
-
-		this._rightControl.addEventListener(
-			'click',
+			this._rightControl.addEventListener(
+				'click',
 			this._debounceRight(this._onRightClick, this._clickTimeout),
-		);
+			);
+		}, 0);
 	}
 
 	_debounceRight = (cb, timeout) => {
@@ -82,9 +87,32 @@ class Slider {
   	return this._debouncedLeftHandler;
 	};
 
+	_onLeftClick = () => {
+		throw new Error('Abstract method not implemented: _onLeftClick');
+	};
+
+	_onRightClick = () => {
+		throw new Error('Abstract method not implemented: _onRightClick');
+	};
+};
+
+class Slider extends AbstractSlider {
+	constructor({
+		slideList,
+		slideListContainer,
+		controls, 
+		clickTimeout = 250,
+	} = {}) {
+		super(
+			{slideList,
+			slideListContainer,
+			controls, 
+			clickTimeout}
+		);
+	}
+
 	_onRightClick = () => {
 		if (this._areAllSlidesVisible()) {
-			console.log(`don't move`);
 			return;
 		}
 
@@ -121,7 +149,6 @@ class Slider {
 
 	_onLeftClick = () => {
 		if (this._areAllSlidesVisible()) {
-			console.log(`don't move`);
 			return;
 		}
 
@@ -166,7 +193,7 @@ class Slider {
 	};
 };
 
-class Carousel {
+class Carousel extends AbstractSlider{
 	constructor({
 		slideList,
 		slideListContainer,
@@ -174,63 +201,19 @@ class Carousel {
 		controls, 
 		clickTimeout = 250,
 	} = {}) {
-		this._slideList = slideList;
-		this._slideListContainer = slideListContainer;
-		this._clickTimeout = clickTimeout;
+		super({
+			slideList,
+			slideListContainer,
+			slidesVisibleCount, 
+			controls, 
+			clickTimeout,
+		});
+
 		this._slidesVisibleCount = slidesVisibleCount;
-		this._slidesCount = this._slideList.length;
 		this._slidesOffset = 0;
-		this._transition = Math.round(
-			this._slideList[1].getBoundingClientRect().left - this._slideList[0].getBoundingClientRect().left
-		);
-		this._leftControl = controls[0];
-		this._rightControl = controls[1];
-		this._firstSlide = slideList[0];
-		this._rightButton = this._rightControl.querySelector('button');
-		this._leftButton = this._leftControl.querySelector('button');
-
-		this._step = 0;
-
-		this._leftControl.addEventListener(
-			'click',
-			this._debounceLeft(this._onLeftClick, this._clickTimeout),
-		);
-
-		this._rightControl.addEventListener(
-			'click',
-			this._debounceRight(this._onRightClick, this._clickTimeout),
-		);
 
 		this._checkControlsAccessibility();
 	}
-
-	_debounceRight = (cb, timeout) => {
-  	let timeoutId;
-
-  	this._debouncedRightHandler = () => {
-  		if (timeoutId) {
-  			clearTimeout(timeoutId);
-  	  	timeoutId = setTimeout(cb, timeout);
-  	  	return;
-  		}
-
-  		cb();
-  		timeoutId = setTimeout(() => {}, 0);
-  	};
-
-  	return this._debouncedRightHandler;
-	};
-
-	_debounceLeft = (cb, timeout) => {
-  	let timeoutId;
-
-  	 this._debouncedLeftHandler = () => {
-  		clearTimeout(timeoutId);
-  	  timeoutId = setTimeout(cb, timeout);
-  	};
-
-  	return this._debouncedLeftHandler;
-	};
 
 	_onRightClick = () => {
 		this._transition = Math.round(

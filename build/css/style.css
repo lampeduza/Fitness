@@ -2746,12 +2746,6 @@ iframe {
     transform: none;
     left: auto;
     top: auto;
-    /*
-		iframe {
-			width: 100%;
-			height: auto;
-		}
-		*/
   }
 
   .represent__video-link::before {
